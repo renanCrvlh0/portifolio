@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Renan de Carvalho</title>
 </head>
 
 <body>
 
-    <header>
+    <header >
         <nav class="menu-navagacao">
             <a href="#">Renan de Carvalho</a>
             <ul class="container-navegacao">
@@ -43,15 +44,17 @@
             na área do desenvolvimento.<br/><br/>Sempre em busca de conhecimento.</p>
 
             <button id="btn-projetos" class="btn">VER PROJETOS</button>
+
         </div>
 
         <img src="imagens/fundo verde.jpg" alt="" class="foto-perfil">
         
+        
     </section>
 
     <section class="sobre">
-        <div class="config-tela conteudo-sobre">
-            <h2 class="titulo-sobre">S O B R E</h2>
+        <div class="config-tela config-secção">
+            <h2 class="titulos">S O B R E</h2>
             <h3 class="subtitulo-sobre">Um pouco sobre mim...</h3>
             <p class="texto-sobre">Tenho 22 anos, iniciei no mercado de trabalho na área de Administração, mas sempre fui apaixonado pela área de Tecnologia. 
                 Atualmente sou estudante do 6º Semestre de Ciência da Computação, atuando no mercado na área de suporte técnico. 
@@ -60,20 +63,51 @@
         </div>
     </section>
 
-    <section class="config-tela">
-        <h2>H A B I L I D A D E S</h2>
-        <h3>Nível Técnico</h3>
-        <button>Desenvolvimento Front End</button>
-        <button>Desenvolvimento Back End</button>
-        <button>Bancos de Dados</button>
-        <button>Frameworks</button>
-        <button>Design UI/UX</button>
+    <section class="habilidades">
+        <div class="conteudo-habilidades config-tela config-secção">
+            <h2 class="titulos">H A B I L I D A D E S</h2>
+            <h3 class="subtitulos">Nível Técnico</h3>
+            
+            <div class="container-botoes">
+
+                <div class="btn-habilidades">
+                    <h2><span class="material-symbols-outlined code-symbol">code</span>Desenvolvimento <br/> Front End<span class="material-symbols-outlined arrow-symbol-front">expand_more</span></h2>
+
+                    <!-- <div class="esconde">
+                        <div>
+                            <span class="material-symbols-outlined">html</span><div class="barra-porcentagem"></div>
+                        </div>
+                    </div> -->
+                </div>
+
+                <div class="btn-habilidades">
+                    <h2><span class="material-symbols-outlined code-symbol">display_settings</span>Desenvolvimento <br/> Back End<span class="material-symbols-outlined arrow-symbol-back">expand_more</span></h2>   
+                </div>
+
+                <div class="btn-habilidades">
+                    <h2><span class="material-symbols-outlined code-symbol">database</span>Banco de Dados<span class="material-symbols-outlined arrow-symbol-banco">expand_more</span></h2>   
+                </div>
+
+                <div class="btn-habilidades">
+                    <h2><span class="material-symbols-outlined code-symbol">data_object</span>Frameworks<span class="material-symbols-outlined arrow-symbol-frame">expand_more</span></h2>   
+                </div>
+
+                <div class="btn-habilidades">
+                    <h2><span class="material-symbols-outlined code-symbol">design_services</span>Design UI/UX<span class="material-symbols-outlined arrow-symbol-design">expand_more</span></h2>   
+                </div>
+
+                <div class="btn-habilidades">
+                    <h2><span class="material-symbols-outlined code-symbol">book</span>Soft Skills<span class="material-symbols-outlined arrow-symbol-soft">expand_more</span></h2>   
+                </div>
+
+            </div>
+        </div>
     </section>
 
     <section class="formacoes">
         <div class="config-tela">
             <h2 class="titulo-formacoes">F O R M A Ç Õ E S</h2>
-            <h3 class="subtitulo-formacoes">Especializações</h3>
+            <h3 class="subtitulos">Especializações</h3>
             <div>
                 <div>
                     <h3>2022 - 2024</h3>
@@ -187,7 +221,7 @@
     </section>
     
 
-    <footer>
+    <footer class="config-tela">
         <h3>2022 | Todos os direitos reservados</h3>
     </footer>
 
