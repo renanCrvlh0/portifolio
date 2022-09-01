@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+/* html {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+} */
+
 img {
     display: block;
     max-width: 100%;
@@ -53,12 +58,22 @@ a:hover {
 }
 
 .redes-sociais {
-    display: block;
     position: fixed;
-    margin-top: 800px;
-    margin-left: 10px;
     display: flex;
     flex-direction: column;
+    margin-top: 500px;
+    margin-left: 20px;
+    /* display: flex;
+    position: fixed;
+    margin-top: 800px;
+    margin-left: 10px; */
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.fa-brands {
+    font-size: 25px;
+    padding: 10px;
 }
 
 
@@ -162,7 +177,7 @@ a:hover {
 
 
 .config-secção {
-    padding: 10px 0 100px;
+    padding: 150px 0 100px;
     
 }
 
@@ -195,6 +210,7 @@ a:hover {
 .sobre {
     text-align: center;
     background-color: #6B6B6B;
+    height: 100vh;
 }
 
 .formacoes {
@@ -214,15 +230,15 @@ a:hover {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
     justify-items: center;
-    height: 100%;
+    height: 100vh;
 
 }
 
 .conteudo-habilidades {
     grid-column: 2/3;
     margin: 0;
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 100%;
     text-align: center;
 }
 
@@ -237,7 +253,7 @@ a:hover {
     font-size: 12px;
     font-family: poppins, sans-serif;
     color: white;
-    border: 3px solid white;
+    /* border: 3px solid white; */
 }
 
 .btn-habilidades:hover {
@@ -313,8 +329,122 @@ a:hover {
 
 
 
+.formacoes {
+    height: 100%; 
+    text-align: center;
+}
+
+.formacao {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align:justify;
+    gap: 0 50px;
+    margin-top: 60px;
+}
+
+.ano-formacao {
+    color: #4CD137;
+    font-family: poppins, sans-serif;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.titulo-formacao {
+    font-family: poppins, sans-serif;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.instituicao-formacao {
+    font-family: poppins, sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    padding: 1px 5px;
+}
+
+.texto-formacao {
+    font-family: poppins, sans-serif;
+    font-size: 16px;    
+}
 
 
+
+
+
+
+
+.portifolio {
+    height: 100vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+.contatos {
+    text-align: center;
+    height: 100vh;
+}
+
+.container-contatos {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 100px;
+    /* margin-top: 80px; */
+    /* padding: 150px 0 100px; */
+}
+
+.contatar {
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.caixa-contatos {
+    /* border: 3px solid white; */
+    padding: 50px 0 0 0;
+    box-shadow: 15px 15px 3px #424141;
+}
+
+.caixa-contatos:hover  {
+    cursor: pointer;
+    border: 1px solid #4CD137;
+}
+
+
+.texto-contato {
+    color: #4CD137;
+    font-family: poppins, sans-serif;
+    font-size: 20px;
+}
+
+.descricao-contato {
+    font-family: poppins, sans-serif;
+    /* font-size: 15px;
+    margin: 0;
+    border: 1px solid black; */
+}
+
+.fa-location-dot {
+    font-size: 80px;
+    padding: 20px 0 30px 0px;
+}
+
+.fa-envelope {
+    font-size: 80px;
+    padding: 20px 0 30px 0px;
+}
+
+.fa-square-phone {
+    font-size: 80px;
+    padding: 20px 0 30px 0;
+}
 
 footer {
     width: 100%;
