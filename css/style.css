@@ -27,14 +27,31 @@ header{
     display: flex;
 }
 
-a {
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.navegacao {
     text-decoration: none;
     font-size: 20px;
     color: white;
     font-family: poppins, sans-serif;
 }
 
-a:hover {
+.redes-laterais {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-family: poppins, sans-serif;
+}
+
+.navegacao:hover {
+    cursor: pointer;
+    color: #4CD137;
+}
+
+.redes-laterais:hover {
     cursor: pointer;
     color: #4CD137;
 }
@@ -100,7 +117,8 @@ a:hover {
     display: grid;
     grid-template-columns: 1fr 3fr 2fr 1fr;
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    min-height: 900px;
     padding-top: 250px;
     padding-bottom: 350px ;
     align-content: center;
@@ -213,22 +231,21 @@ a:hover {
 .sobre {
     text-align: center;
     background-color: #6B6B6B;
-    height: 100%;
-    padding-top: 100px;
-    padding-bottom: 300px;
+    height: 100vh;
+    min-height: 900px;
 }
 
 .formacoes {
     background-color: #6B6B6B;
-    height: 100%;
-    padding-top: 100px;
-    padding-bottom: 300px;
+    height: 100vh;
+    min-height: 1400px;
+    text-align: center;
 }
 
 .contatos {
     background-color: #6B6B6B;
-    height: 100%;
-    padding: 100px;
+    height: 100vh;
+    min-height: 900px;
 }
 
 
@@ -238,9 +255,8 @@ a:hover {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
     justify-items: center;
-    height: 100%;
-    padding-top: 100px;
-    padding-bottom: 300px;
+    height: 100vh;
+    min-height: 1000px;
 }
 
 .conteudo-habilidades {
@@ -311,10 +327,11 @@ a:hover {
 
 
 
-.formacoes {
-    height: 100%; 
+/* .formacoes {
+    height: 100vh;
+    min-height: 900px;
     text-align: center;
-}
+} */
 
 .formacao {
     display: grid;
@@ -356,9 +373,9 @@ a:hover {
 
 
 .portifolio {
-    height: 100%;
-    padding-top: 100px;
-    padding-bottom: 300px;
+    height: 100vh;
+    min-height: 1000px;
+    text-align: center;
 }
 
 
@@ -373,9 +390,8 @@ a:hover {
 
 .contatos {
     text-align: center;
-    height: 100%;
-    padding-top: 100px;
-    padding-bottom: 300px;
+    height: 100vh;
+    min-height: 900px;
 }
 
 .container-contatos {
@@ -403,6 +419,18 @@ a:hover {
 .caixa-contatos:hover  {
     cursor: pointer;
     border: 2px solid #4CD137;
+}
+
+a {
+    text-decoration: none;
+}
+
+.texto-caixa {
+    text-decoration: none;
+    font-size: 15px;
+    font-family: poppins, sans-serif;
+    font-weight: normal;
+    color: white;
 }
 
 
