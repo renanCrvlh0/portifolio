@@ -4,42 +4,7 @@
     box-sizing: border-box;
 }
 
-.teste {
-    /* grid-row: 2/3; */
-    border: 2px solid red;
-    width: 200px;
-    height: 10px;
-    margin: 40px;
-    /* display: none; */
-}
 
-.teste-front {
-    grid-row: 2/3;
-}
-
-.teste-back {
-    grid-row: 2/3;
-    grid-column: 2/3;
-}
-
-.teste-banco {
-    grid-row: 2/3;
-    grid-column: 3/4;
-}
-
-.teste-frame {
-    grid-row: 4/5;
-}
-
-.teste-design {
-    grid-row: 4/5;
-    grid-column: 2/3;
-}
-
-.teste-soft {
-    grid-row: 4/5;
-    grid-column: 3/4;
-}
 
 html {
     scroll-behavior: smooth;
@@ -309,6 +274,7 @@ li {
     display: flex;
     align-items: flex-end;
     padding: 20px 0 20px 0;
+    margin: 0;
     border-radius: 5px;
     background-color: #6B6B6B;
     text-align: left;
@@ -316,6 +282,196 @@ li {
     font-family: poppins, sans-serif;
     color: white;
     border: 2px solid #4cd13700;
+}
+
+.esconde {
+    display: none;
+}
+
+@media (max-width: 1600px) {
+    .btn-habilidades {
+        font-size: 9px;
+    }
+
+    .container-botoes {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.texto-tecnologia {
+    text-align: start;
+}
+
+.teste {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid red;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    /* display: none; */
+}
+
+.barra-porcentagem {
+    background-color: gray;
+    width: 250px;
+    height: 10px;
+    border-radius: 10px;
+}
+
+.porcentagem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.carregamento-porcentagem10 {
+    width: 10%;
+    height: 100%;
+    background-color: #4CD137;
+    border-radius: 10px;
+}
+
+.carregamento-porcentagem10 {
+    width: 20%;
+    height: 100%;
+    background-color: #4CD137;
+    border-radius: 10px;
+}
+
+.carregamento-porcentagem20 {
+    width: 30%;
+    height: 100%;
+    background-color: #4CD137;
+    border-radius: 10px;
+}
+
+.carregamento-porcentagem30 {
+    width: 40%;
+    height: 100%;
+    background-color: #4CD137;
+    border-radius: 10px;
+}
+
+.carregamento-porcentagem40 {
+    width: 40%;
+    height: 100%;
+    background-color: #4CD137;
+    border-radius: 10px;
+}
+
+.carregamento-porcentagem50 {
+    width: 50%;
+    height: 100%;
+    background-color: #4CD137;
+    border-radius: 10px;
+}
+
+.carregamento-porcentagem60 {
+    width: 60%;
+    height: 100%;
+    background-color: #4CD137;
+    border-radius: 10px;
+}
+
+.carregamento-porcentagem70 {
+    width: 70%;
+    height: 100%;
+    background-color: #4CD137;
+    border-radius: 10px;
+}
+
+.carregamento-porcentagem80 {
+    width: 80%;
+    height: 100%;
+    background-color: #4CD137;
+    border-radius: 10px;
+}
+
+.carregamento-porcentagem90 {
+    width: 90%;
+    height: 100%;
+    background-color: #4CD137;
+    border-radius: 10px;
+}
+
+.carregamento-porcentagem100 {
+    width: 100%;
+    height: 100%;
+    background-color: #4CD137;
+    border-radius: 10px;
+}
+
+.fa-html5 {
+    /* color: #ff532d; */
+    color:#6B6B6B ;
+}
+
+.fa-square-js {
+    /* color: #fbea34; */
+    color: #6B6B6B;
+}
+
+.fa-css3-alt {
+    /* color: #2432ff; */
+    color: #6B6B6B;
+}
+
+.fa-c {
+    color: #6B6B6B;
+}
+
+.fa-python {
+    color: #6B6B6B;
+}
+
+.fa-php {
+    color: #6B6B6B;
+}
+
+.fa-java {
+    color: #6B6B6B
+}
+
+.fa-node-js {
+    color: #6B6B6B;
+}
+
+.fa-figma {
+    color: #6B6B6B;
+}
+
+.teste-front {
+    grid-row: 2/3;
+    /* display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around; */
+}
+
+.teste-back {
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+.teste-banco {
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+
+.teste-frame {
+    grid-row: 4/5;
+}
+
+.teste-design {
+    grid-row: 4/5;
+    grid-column: 2/3;
+}
+
+.teste-soft {
+    grid-row: 4/5;
+    grid-column: 3/4;
 }
 
 .btn-habilidades:hover {
@@ -356,8 +512,8 @@ li {
 .container-botoes {
     border: 2px solid blue;
     display: grid;
-    grid-template-columns: 2fr 1fr 2fr;
-    gap: 80px 120px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px 30px;
     margin-top: 80px;
     height: auto;
 }
