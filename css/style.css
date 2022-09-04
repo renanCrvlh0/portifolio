@@ -4,6 +4,43 @@
     box-sizing: border-box;
 }
 
+.teste {
+    /* grid-row: 2/3; */
+    border: 2px solid red;
+    width: 200px;
+    height: 10px;
+    margin: 40px;
+    /* display: none; */
+}
+
+.teste-front {
+    grid-row: 2/3;
+}
+
+.teste-back {
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+.teste-banco {
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+
+.teste-frame {
+    grid-row: 4/5;
+}
+
+.teste-design {
+    grid-row: 4/5;
+    grid-column: 2/3;
+}
+
+.teste-soft {
+    grid-row: 4/5;
+    grid-column: 3/4;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -317,10 +354,11 @@ li {
 
 
 .container-botoes {
+    border: 2px solid blue;
     display: grid;
     grid-template-columns: 2fr 1fr 2fr;
-    gap: 120px 120px;
-    margin-top: 200px;
+    gap: 80px 120px;
+    margin-top: 80px;
     height: auto;
 }
 
