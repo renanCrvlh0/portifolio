@@ -613,7 +613,7 @@ li {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     border-radius: 5px;
     height: auto;
     padding: 30px;
@@ -621,10 +621,12 @@ li {
 }
 
 .card {
+    background-color: #4cd1374b;
     border: 2px solid white;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
+    margin-right: 10px;
     padding: 7px;
     width: 300px;
     height: 100%;
