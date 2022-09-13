@@ -18,16 +18,43 @@ img {
 
 
 body {
-    background-color: #424141;
+    background-color: #000000;
     color: white;
 }
 
 header{
     width: 100%;
+    height: 80px;
     position: fixed;
-    background-color: #6B6B6B;
+    background-color: #000000;
     display: flex;
+    z-index: 999;
 }
+
+.btn-darkLight {
+    position: relative;
+    right: 2%;
+    top: 15%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: rgb(221, 221, 221);
+    border: 2px solid rgb(221, 221, 221);
+    box-shadow: inset -5px -1px 5px gray;
+}
+
+.light-mode {
+    color: #000000;
+    font-size: 22px;
+    position: relative;
+}
+
+.btn-darkLight:hover {
+    cursor: pointer;
+    /* background-color: #6B6B6B; */
+    border: 2px solid #7d07cc;
+}
+
 
 li {
     text-decoration: none;
@@ -50,12 +77,12 @@ li {
 
 .navegacao:hover {
     cursor: pointer;
-    color: #4CD137;
+    color: #7d07cc;
 }
 
 .redes-laterais:hover {
     cursor: pointer;
-    color: #4CD137;
+    color: #7d07cc;
 }
 
 .menu-navagacao{
@@ -117,6 +144,7 @@ li {
 
 .apresentacao{
     display: grid;
+    border-bottom: 1px solid rgba(173, 173, 173, 0.219);
     grid-template-columns: 1fr 3fr 2fr 1fr;
     width: 100%;
     height: 100vh;
@@ -124,7 +152,7 @@ li {
     padding-top: 250px;
     padding-bottom: 350px ;
     align-content: center;
-    background-color:#424141
+    /* background-color:#000000 */
 }
 
 .container-apresentacao {
@@ -160,20 +188,16 @@ li {
     width: 200px;
     height: 50px;
     margin-top: 50px;
-    background-color: #424141;
+    background-color: #000000;
     border: 3px solid white;
     color: white;
     border-radius: 5px;
 }
 
-.btn2 {
-    background-color: #6B6B6B;
-}
-
 .btn:hover {
     cursor: pointer;
-    border: 3px solid #4CD137;
-    color: #4CD137;
+    border: 3px solid #7d07cc;
+    color: #7d07cc;
 }
 
 .foto-perfil {
@@ -186,6 +210,25 @@ li {
 } 
 
 
+@media (max-width: 1045px) {
+
+    .apresentacao {
+        padding-top: 300px;
+    }
+
+
+    .foto-perfil {
+        height: 250px;
+        width: 250px;
+        grid-column: 2/4;
+        grid-row: 1/2;
+    }
+
+    .container-apresentacao {
+        grid-column: 2/4;
+        grid-row: 2/3;
+    }
+}
 
 
 
@@ -198,8 +241,7 @@ li {
 
 
 
-
-.config-secção {
+.config-seccao {
     padding: 150px 0 100px;
     
 }
@@ -207,7 +249,7 @@ li {
 .titulos {
     font-size: 20px;
     font-family: roboto, sans-serif;
-    color: #4CD137;
+    color: #7d07cc;
 }
 
 .subtitulos {
@@ -232,20 +274,23 @@ li {
 
 .sobre {
     text-align: center;
-    background-color: #6B6B6B;
+    border-bottom: 1px solid rgba(173, 173, 173, 0.219);
+    /* background-color: #6B6B6B; */
     height: 100vh;
-    min-height: 900px;
+    min-height: 200px;
 }
 
 .formacoes {
-    background-color: #6B6B6B;
+    /* background-color: #6B6B6B; */
+    border-bottom: 1px solid rgba(173, 173, 173, 0.219);
     height: 100vh;
     min-height: 1400px;
     text-align: center;
 }
 
 .contatos {
-    background-color: #6B6B6B;
+    /* background-color: #6B6B6B; */
+    
     height: 100vh;
     min-height: 900px;
 }
@@ -256,6 +301,7 @@ li {
 .habilidades {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
+    border-bottom: 1px solid rgba(173, 173, 173, 0.219);
     justify-items: center;
     height: 100vh;
     min-height: 1000px;
@@ -276,12 +322,12 @@ li {
     padding: 20px 0 20px 0;
     margin: 0;
     border-radius: 5px;
-    background-color: #6B6B6B;
+    /* background-color: #6B6B6B; */
     text-align: left;
     font-size: 12px;
     font-family: poppins, sans-serif;
     color: white;
-    border: 2px solid #4cd13700;
+    border: 2px solid #7d07cc00;
 }
 
 .esconde {
@@ -325,77 +371,77 @@ li {
 .carregamento-porcentagem10 {
     width: 10%;
     height: 100%;
-    background-color: #4CD137;
+    background-color: #7d07cc;
     border-radius: 10px;
 }
 
 .carregamento-porcentagem10 {
     width: 20%;
     height: 100%;
-    background-color: #4CD137;
+    background-color: #7d07cc;
     border-radius: 10px;
 }
 
 .carregamento-porcentagem20 {
     width: 30%;
     height: 100%;
-    background-color: #4CD137;
+    background-color: #7d07cc;
     border-radius: 10px;
 }
 
 .carregamento-porcentagem30 {
     width: 40%;
     height: 100%;
-    background-color: #4CD137;
+    background-color: #7d07cc;
     border-radius: 10px;
 }
 
 .carregamento-porcentagem40 {
     width: 40%;
     height: 100%;
-    background-color: #4CD137;
+    background-color: #7d07cc;
     border-radius: 10px;
 }
 
 .carregamento-porcentagem50 {
     width: 50%;
     height: 100%;
-    background-color: #4CD137;
+    background-color: #7d07cc;
     border-radius: 10px;
 }
 
 .carregamento-porcentagem60 {
     width: 60%;
     height: 100%;
-    background-color: #4CD137;
+    background-color: #7d07cc;
     border-radius: 10px;
 }
 
 .carregamento-porcentagem70 {
     width: 70%;
     height: 100%;
-    background-color: #4CD137;
+    background-color: #7d07cc;
     border-radius: 10px;
 }
 
 .carregamento-porcentagem80 {
     width: 80%;
     height: 100%;
-    background-color: #4CD137;
+    background-color: #7d07cc;
     border-radius: 10px;
 }
 
 .carregamento-porcentagem90 {
     width: 90%;
     height: 100%;
-    background-color: #4CD137;
+    background-color: #7d07cc;
     border-radius: 10px;
 }
 
 .carregamento-porcentagem100 {
     width: 100%;
     height: 100%;
-    background-color: #4CD137;
+    background-color: #7d07cc;
     border-radius: 10px;
 }
 
@@ -505,8 +551,8 @@ li {
 
 .btn-habilidades:hover {
     cursor: pointer;
-    /* color: #4CD137; */
-    border: 2px solid #4CD137;
+    /* color: #7d07cc; */
+    border: 2px solid #7d07cc;
 }
 
 .btn-habilidades h2{
@@ -519,21 +565,21 @@ li {
     font-size: 35px;
     margin-left: 80px;
     padding-right: 10px;
-    color: #4CD137;
+    color: #7d07cc;
 }
 
 .btn-habilidades .code-symbol{
    font-size: 40px;
    margin-right: 15px;
    padding-left: 20px;
-   color: #4CD137;
+   color: #7d07cc;
     
 }
 
 .btn-habilidades .data-symbol {
    font-size: 35px;
    margin-right: 35px;
-   color: #4CD137;
+   color: #7d07cc;
 }
 
 
@@ -571,7 +617,7 @@ li {
 }
 
 .ano-formacao {
-    color: #4CD137;
+    color: #7d07cc;
     font-family: poppins, sans-serif;
     font-size: 20px;
     padding: 5px;
@@ -602,6 +648,8 @@ li {
 
 
 .portifolio {
+    border-bottom: 1px solid rgba(173, 173, 173, 0.219);
+    width: 100%;
     height: 100vh;
     min-height: 1000px;
     text-align: center;
@@ -612,14 +660,16 @@ li {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    width: 50%;
+    position: relative;
+    left: 25%;
     height: auto;
     padding: 30px;
     margin-top: 100px;
 }
 
 .card {
-    background-color: #424141;
+    background-color: #000000;
     border: 2px solid white;
     border-radius: 5px;
     display: flex;
@@ -632,8 +682,8 @@ li {
 
 .card:hover {
     cursor: pointer;
-    background-color: #6B6B6B;
-    border: 2px solid #4CD137;
+    /* background-color: #6B6B6B; */
+    border: 2px solid #7d07cc;
 }
 
 .imagens {
@@ -676,7 +726,7 @@ li {
 .visitar {
     padding: 10px;
     border-radius: 5px;
-    background-color: #424141;
+    background-color: #000000;
     border: 2px solid white;
     color: white;
     margin-right: 20px;
@@ -685,7 +735,7 @@ li {
 .repositorio {
     padding: 10px;
     border-radius: 5px;
-    background-color: #424141;
+    background-color: #000000;
     border: 2px solid white;
     color: white;
 }
@@ -711,16 +761,16 @@ li {
 }
 
 .caixa-contatos {
-    background-color: #424141;
+    background-color: #000000;
     border-radius: 5px;
     padding: 50px 0 15px 0;
-    border: 2px solid #4cd13700;
-    /* box-shadow: 13px 5px 3px #424141; */
+    border: 3px solid #7d07cc00;
+    /* box-shadow: 13px 5px 3px #000000; */
 }
 
 .caixa-contatos:hover  {
     cursor: pointer;
-    border: 2px solid #4CD137;
+    border: 3px solid #7d07cc;
 }
 
 a {
@@ -768,6 +818,7 @@ footer {
     display: block;
     width: 100%;
     padding: 20px;
-    background-color: #424141;
+    /* background-color: #000000; */
     text-align: center;
+    border-top: 1px solid rgba(173, 173, 173, 0.219);
 }
