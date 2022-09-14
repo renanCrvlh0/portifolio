@@ -213,11 +213,13 @@ li {
 @media (max-width: 1045px) {
 
     .apresentacao {
+        transition: .5s;
         padding-top: 300px;
     }
 
 
     .foto-perfil {
+        transition: .5s;
         height: 250px;
         width: 250px;
         grid-column: 2/4;
@@ -225,8 +227,41 @@ li {
     }
 
     .container-apresentacao {
+        transition: .5s;
         grid-column: 2/4;
         grid-row: 2/3;
+    }
+}
+
+@media (max-width: 920px) {
+
+    .btn-darkLight {
+        right: 1%;
+        top: 30%;
+        width: 30px;
+        height: 30px;
+    }
+    
+    .btn-darkLight .light-mode {
+        font-size: 18px;
+    }
+
+    .apresentacao {
+        transition: .5s;
+        padding-top: 400px;
+    }
+
+    .titulo-apresentacao {
+        transition: .5s;
+        font-size: 70px;
+    }
+
+    .foto-perfil {
+        transition: .5s;
+        width: 200px;
+        height: 200px;
+        grid-column: 2/4;
+        grid-row: 1/2;
     }
 }
 
@@ -741,18 +776,16 @@ li {
 }
 
 .contatos {
-    text-align: center;
     height: 100vh;
     min-height: 900px;
+    width: 100%;
+    text-align: center;
 }
 
 .container-contatos {
     height: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 100px;
-    /* margin-top: 80px; */
-    /* padding: 150px 0 100px; */
+    width: 100%;
+    padding: 150px 0 100px;
 }
 
 .contatar {
@@ -763,9 +796,8 @@ li {
 .caixa-contatos {
     background-color: #000000;
     border-radius: 5px;
-    padding: 50px 0 15px 0;
+    padding: 50px 5px 15px 5px;
     border: 3px solid #7d07cc00;
-    /* box-shadow: 13px 5px 3px #000000; */
 }
 
 .caixa-contatos:hover  {
@@ -787,16 +819,16 @@ a {
 
 
 .texto-contato {
-    /* color: white; */
+    color: white;
     font-family: poppins, sans-serif;
     font-size: 20px;
 }
 
 .descricao-contato {
     font-family: poppins, sans-serif;
-    /* font-size: 15px;
+    font-size: 15px;
     margin: 0;
-    border: 1px solid black; */
+    border: 1px solid black;
 }
 
 .fa-location-dot {
