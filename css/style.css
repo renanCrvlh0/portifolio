@@ -358,12 +358,12 @@ li {
     padding: 20px 0 20px 0;
     margin: 0;
     border-radius: 5px;
-    /* background-color: #6B6B6B; */
+    width: 500px;
     text-align: left;
     font-size: 12px;
     font-family: poppins, sans-serif;
     color: white;
-    border: 2px solid #7d07cc00;
+    border: 2px solid #7d07cc;
 }
 
 .esconde {
@@ -601,8 +601,6 @@ li {
 
 .btn-habilidades:hover {
     cursor: pointer;
-    /* color: #7d07cc; */
-    border: 2px solid #7d07cc;
 }
 
 .btn-habilidades h2{
@@ -635,29 +633,13 @@ li {
 
 
 .container-botoes {
-    /* border: 2px solid blue; */
-    /* display: flex;
-    flex-direction: column; */
-    /* flex-wrap: wrap; */
-    /* align-items: center; */
-    /* grid-template-columns: 1fr 1fr 1fr; */
-    border: 1px solid #7d07cc;
-    width: 100%;
+    max-width: 1400px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px 30px;
     margin-top: 80px;
-    height: auto;
 }
 
-
-
-
-/* .formacoes {
-    height: 100vh;
-    min-height: 900px;
-    text-align: center;
-} */
 
 .formacao {
     display: grid;
@@ -810,6 +792,7 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 1300px;
 }
 
 .container-contatos, div + div {
