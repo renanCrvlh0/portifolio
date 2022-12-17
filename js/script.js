@@ -1,40 +1,47 @@
 window.onload = () => {
-
-    const habilidades = document.querySelectorAll('.btn-habilidades');
-
-    habilidades.forEach(function(btn){
-        btn.addEventListener('click', dropdown);
-    })
-
-
-
-
-
-
-
-
-    // const btnFront = document.querySelector('.btn-front');
+    const btnFront = document.querySelector('.btn-front');
+    const btnBack = document.querySelector('.btn-back');
+    const btnBanco = document.querySelector('.btn-banco');
+    const btnFrame = document.querySelector('.btn-frame');
+    const btnDesign = document.querySelector('.btn-design');
+    const btnSoft = document.querySelector('.btn-soft');
 
     
 
-    function dropdown(){
-        const front = document.querySelectorAll('.teste');
+    btnFront.addEventListener('click', ()=>{
+        const front = document.querySelector('.teste-front');
 
-        front.forEach(function(number){
-             if (number.classList.contains('ativo')){
-                number.classList.remove('ativo');
-             } else {
-                number.classList.add('ativo');
-             }
-        })
+        front.classList.toggle('ativo');
+    })
 
-        // if (front.classList.contains('ativo')){
-        //     front.classList.remove('ativo');
-        // } else {
-        //     front.classList.add('ativo');
-        // }
-        
-    }
+    btnBack.addEventListener('click', ()=>{
+        const back = document.querySelector('.teste-back');
 
-    //  btnFront.addEventListener('click', dropdown);
+        back.classList.toggle('ativo');
+    })
+
+    btnBanco.addEventListener('click', ()=>{
+        const banco = document.querySelector('.teste-banco');
+
+        banco.classList.toggle('ativo');
+    })
+
+    btnFrame.addEventListener('click', ()=>{
+        const frame = document.querySelector('.teste-frame');
+
+        frame.classList.toggle('ativo');
+    })
+
+    btnDesign.addEventListener('click', ()=>{
+        const design = document.querySelector('.teste-design');
+
+        design.classList.toggle('ativo');
+    })
+
+    btnSoft.addEventListener('click', ()=>{
+        const soft = document.querySelector('.teste-soft');
+
+        soft.classList.toggle('ativo');
+    })
+
 }
