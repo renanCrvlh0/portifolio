@@ -523,37 +523,37 @@ li {
 .btn-front {
     grid-column: 1/2;
     grid-row: 1/2;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .btn-back {
     grid-column: 2/3;
     grid-row: 1/2;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .btn-banco {
     grid-column: 1/2;
     grid-row: 3/4;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .btn-frame {
     grid-column: 2/3;
     grid-row: 3/4;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .btn-design {
     grid-column: 1/2;
     grid-row: 5/6;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .btn-soft {
     grid-column: 2/3;
     grid-row: 5/6;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .teste-front {
@@ -561,6 +561,7 @@ li {
     grid-row: 2/3;
     display: none;
     border: 1px solid #7d07cc;
+    margin-bottom: 40px;
     /* display: flex;
     flex-direction: row;
     align-items: center;
@@ -572,31 +573,35 @@ li {
     grid-row: 2/3;
     grid-column: 2/3;
     display: none;
-    z-index: 0;
+    margin-bottom: 40px;
 }
 
 .teste-banco {
     grid-column: 1/2;
     grid-row: 4/5;
     display: none;
+    margin-bottom: 40px;
 }
 
 .teste-frame {
     grid-column: 2/3;
     grid-row: 4/5;
     display: none;
+    margin-bottom: 40px;
 }
 
 .teste-design {
     grid-column: 1/2;
     grid-row: 6/7;   
-    display: none; 
+    display: none;
+    margin-bottom: 40px; 
 }
 
 .teste-soft {
     grid-column: 2/3;
     grid-row: 6/7;    
     display: none;
+    margin-bottom: 40px;
 }
 
 .btn-habilidades:hover {
@@ -637,7 +642,7 @@ li {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px 30px;
-    margin-top: 80px;
+    margin-top: 200px;
 }
 
 
