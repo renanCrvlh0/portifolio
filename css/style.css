@@ -552,7 +552,10 @@ li {
     padding: 20px;
     display: grid;
     margin: 0;
-    border: 1px solid red;
+}
+
+.arrow-rotate {
+    transform: rotate(-180deg);
 }
 
 .teste-front {
