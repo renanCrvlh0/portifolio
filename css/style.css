@@ -52,10 +52,22 @@ header{
 
 .btn-darkLight:hover {
     cursor: pointer;
-    /* background-color: #6B6B6B; */
-    border: 2px solid #7d07cc;
+    border: 2px solid #b13bff;
 }
 
+@keyframes flutuar {
+    
+    0% {
+        transform: translate(10px, -10px)
+    }
+    100% {
+        transform: translate(-10px)
+    }
+}
+
+.fa-html5 {
+    animation: flutuar 1s infinite;
+}
 
 li {
     text-decoration: none;
@@ -78,12 +90,12 @@ li {
 
 .navegacao:hover {
     cursor: pointer;
-    color: #7d07cc;
+    color: #b13bff;
 }
 
 .redes-laterais:hover {
     cursor: pointer;
-    color: #7d07cc;
+    color: #b13bff;
 }
 
 .menu-navagacao{
@@ -159,7 +171,7 @@ li {
 
 .texto-portifolio {
     margin-top: 120px;
-    color: #6100a1;
+    color: #b13bff;
     font-size: 30px;
     font-weight: bold;
 }
@@ -196,8 +208,8 @@ li {
 
 .btn:hover {
     cursor: pointer;
-    border: 3px solid #7d07cc;
-    color: #7d07cc;
+    border: 3px solid #b13bff;
+    color: #b13bff;
 }
 
 
@@ -276,7 +288,7 @@ li {
 .titulos {
     font-size: 20px;
     font-family: roboto, sans-serif;
-    color: #7d07cc;
+    color: #b13bff;
 }
 
 .subtitulos {
@@ -370,7 +382,7 @@ li {
     font-size: 12px;
     font-family: poppins, sans-serif;
     color: white;
-    border: 2px solid #7d07cc;
+    border: 2px solid #b13bff;
 }
 
 .esconde {
@@ -404,77 +416,77 @@ li {
 .carregamento-porcentagem10 {
     width: 10%;
     height: 100%;
-    background-color: #7d07cc;
+    background-color: #b13bff;
     border-radius: 10px;
 }
 
 .carregamento-porcentagem10 {
     width: 20%;
     height: 100%;
-    background-color: #7d07cc;
+    background-color: #b13bff;
     border-radius: 10px;
 }
 
 .carregamento-porcentagem20 {
     width: 30%;
     height: 100%;
-    background-color: #7d07cc;
+    background-color: #b13bff;
     border-radius: 10px;
 }
 
 .carregamento-porcentagem30 {
     width: 40%;
     height: 100%;
-    background-color: #7d07cc;
+    background-color: #b13bff;
     border-radius: 10px;
 }
 
 .carregamento-porcentagem40 {
     width: 40%;
     height: 100%;
-    background-color: #7d07cc;
+    background-color: #b13bff;
     border-radius: 10px;
 }
 
 .carregamento-porcentagem50 {
     width: 50%;
     height: 100%;
-    background-color: #7d07cc;
+    background-color: #b13bff;
     border-radius: 10px;
 }
 
 .carregamento-porcentagem60 {
     width: 60%;
     height: 100%;
-    background-color: #7d07cc;
+    background-color: #b13bff;
     border-radius: 10px;
 }
 
 .carregamento-porcentagem70 {
     width: 70%;
     height: 100%;
-    background-color: #7d07cc;
+    background-color: #b13bff;
     border-radius: 10px;
 }
 
 .carregamento-porcentagem80 {
     width: 80%;
     height: 100%;
-    background-color: #7d07cc;
+    background-color: #b13bff;
     border-radius: 10px;
 }
 
 .carregamento-porcentagem90 {
     width: 90%;
     height: 100%;
-    background-color: #7d07cc;
+    background-color: #b13bff;
     border-radius: 10px;
 }
 
 .carregamento-porcentagem100 {
     width: 100%;
     height: 100%;
-    background-color: #7d07cc;
+    background-color: #b13bff;
     border-radius: 10px;
 }
 
@@ -618,21 +630,21 @@ li {
     font-size: 35px;
     margin-left: 80px;
     padding-right: 10px;
-    color: #7d07cc;
+    color: #b13bff;
 }
 
 .btn-habilidades .code-symbol{
    font-size: 40px;
    margin-right: 15px;
    padding-left: 20px;
-   color: #7d07cc;
+   color: #b13bff;
     
 }
 
 .btn-habilidades .data-symbol {
    font-size: 35px;
    margin-right: 35px;
-   color: #7d07cc;
+   color: #b13bff;
 }
 
 
@@ -655,7 +667,7 @@ li {
 }
 
 .ano-formacao {
-    color: #7d07cc;
+    color: #b13bff;
     font-family: poppins, sans-serif;
     font-size: 20px;
     padding: 5px;
@@ -724,8 +736,8 @@ li {
 
 .card:hover {
     cursor: pointer;
-    border: 2px solid #7d07cc;
-    color: #7d07cc;
+    border: 2px solid #b13bff;
+    color: #b13bff;
 }
 
 .imagens {
@@ -765,9 +777,9 @@ li {
 }
 
 .deploy:hover {
-    border: 3px solid #7d07cc;
+    border: 3px solid #b13bff;
     cursor: pointer;
-    color: #7d07cc;
+    color: #b13bff;
 }
 
 .codigo {
@@ -780,9 +792,9 @@ li {
 }
 
 .codigo:hover {
-    border: 3px solid #7d07cc;
+    border: 3px solid #b13bff;
     cursor: pointer;
-    color: #7d07cc;
+    color: #b13bff;
 }
 
 .tecnologias {
@@ -843,13 +855,13 @@ li {
     width: 300px;
     border-radius: 10px;
     padding: 50px 10px;
-    border: 2px solid #7d07cc00;
+    border: 2px solid #b13bff00;
 }
 
 .caixa-contatos:hover {
     cursor: pointer;
-    border: 2px solid #7d07cc;
-    color: #7d07cc;
+    border: 2px solid #b13bff;
+    color: #b13bff;
 }
 
 .texto-contato {
