@@ -324,7 +324,7 @@ li {
     text-align: center;
     border-bottom: 1px solid rgba(173, 173, 173, 0.219);
     height: 100vh;
-    min-height: 200px;
+    min-height: 1200px;
 }
 
 .container-sobre {
@@ -336,6 +336,33 @@ li {
 .btn2 {
     grid-column: 2/4;
 }
+
+
+.skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-top: 80px;
+}
+
+.labels {
+    font-size: 20px;
+    text-align: start;
+}
+
+.info-labels {
+    font-size: 15px;
+    text-align: start;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+.perfil h1 {
+    margin-bottom: 50px;
+    border: 1px solid red;
+}
+
 
 .formacoes {
     border-bottom: 1px solid rgba(173, 173, 173, 0.219);
