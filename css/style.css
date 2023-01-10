@@ -55,19 +55,7 @@ header{
     border: 2px solid #b13bff;
 }
 
-@keyframes flutuar {
-    
-    0% {
-        transform: translate(10px, -10px)
-    }
-    100% {
-        transform: translate(-10px)
-    }
-}
 
-.fa-html5 {
-    animation: flutuar 1s infinite;
-}
 
 li {
     text-decoration: none;
@@ -363,6 +351,70 @@ li {
     border: 1px solid red;
 }
 
+/* @keyframes flutuar {
+    
+    0% {
+        transform: translate(10px, -10px)
+    }
+    100% {
+        transform: translate(-10px)
+    }
+}
+
+.fa-html5 {
+    animation: flutuar 1s infinite;
+} */
+
+.container-front {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.caixa-habilidade {
+    border: 2px solid #b13bff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+
+.fa-html5 {
+    color:#ff4800;
+}
+
+.fa-square-js {
+    color: #fbff00;
+}
+
+.fa-css3-alt {
+    color: #0400ff;
+}
+
+.fa-c {
+    color: #6B6B6B;
+}
+
+.fa-python {
+    color: #6B6B6B;
+}
+
+.fa-php {
+    color: #6B6B6B;
+}
+
+.fa-java {
+    color: #6B6B6B
+}
+
+.fa-node-js {
+    color: #6B6B6B;
+}
+
+.fa-figma {
+    color: #6B6B6B;
+}
+
 
 .formacoes {
     border-bottom: 1px solid rgba(173, 173, 173, 0.219);
@@ -517,41 +569,7 @@ li {
     border-radius: 10px;
 }
 
-.fa-html5 {
-    color:#6B6B6B ;
-}
 
-.fa-square-js {
-    color: #6B6B6B;
-}
-
-.fa-css3-alt {
-    color: #6B6B6B;
-}
-
-.fa-c {
-    color: #6B6B6B;
-}
-
-.fa-python {
-    color: #6B6B6B;
-}
-
-.fa-php {
-    color: #6B6B6B;
-}
-
-.fa-java {
-    color: #6B6B6B
-}
-
-.fa-node-js {
-    color: #6B6B6B;
-}
-
-.fa-figma {
-    color: #6B6B6B;
-}
 
 .btn-front {
     grid-column: 1/2;
