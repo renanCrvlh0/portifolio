@@ -292,20 +292,43 @@ li {
     font-weight: lighter;
 }
 
-.foto-perfil {
-    height: 200px;
-    width: 200px;
+.container-foto {
+    justify-self: center;
+    border: 3px solid #b13bff;
     grid-column: 1/1;
     grid-row: 1/1;
-    border-radius: 50%;
-    justify-self: center;     
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 450px;
+    border-radius: 10px;
 } 
 
+.foto-perfil {
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    margin-bottom: 5px;
+    position: relative;
+    top: -50px;
+    border: 7px solid #b13bff;
+
+}
+
+.background {
+    background-color: #b13bff;
+    height: 150px;
+    width: 100%;
+    border-bottom: 7px solid #b13bff;
+}
+
 .texto-sobre {
+    margin: 0;
+    grid-column: 2/3;
     grid-row: 1/2;
     text-align: justify;
-    padding-top: 30px;
-    font-size: 30px;
+    font-size: 18px;
+    padding-top: 60px;
 }
 
 .sobre {
@@ -318,37 +341,30 @@ li {
 .container-sobre {
     margin-top: 100px;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
 }
 
 .btn2 {
-    grid-column: 2/4;
+    margin-top: 80px;
+    
+    
 }
 
 
 .skills {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column: 2/3;
-    grid-row: 2/3;
-    margin-top: 80px;
+    margin-top: 100px;
 }
 
-.labels {
+
+
+.perfil p {
     font-size: 20px;
-    text-align: start;
+    text-align: center;
 }
 
-.info-labels {
+.perfil a {
+    color: white;
     font-size: 15px;
-    text-align: start;
-    margin-top: 5px;
-    margin-bottom: 25px;
-}
-
-.perfil h1 {
-    margin-bottom: 50px;
-    border: 1px solid red;
 }
 
 /* @keyframes flutuar {
@@ -365,16 +381,15 @@ li {
     animation: flutuar 1s infinite;
 } */
 
-.container-front {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.habilidades-teste {
+    
 }
 
 .caixa-habilidade {
     border: 2px solid #b13bff;
     padding: 10px;
     border-radius: 5px;
+    width: 120px;
 }
 
 
