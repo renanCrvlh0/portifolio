@@ -207,8 +207,8 @@
         <div class="container-portifolio">
 
             <div class="card">
-                <h2 class="titulo-projeto">Busca CEP</h2>
-                <img class="imagens" src="imagens/buscar-cep.png" alt="">
+                <h2 class="titulo-projeto">Buscador de CEP</h2>
+                <img class="imagens" src="imagens/busca-cep.png" alt="">
                 <p class="descricao-projeto">Projeto Buscador de CEP, desenvolvido com o intuito de aprendizado em requisições de API. O projeto em si, utiliza o site ViaCEP para buscar os dados solicitados.</p>
                 <button class="deploy">Deploy</button>
                 <button class="codigo">Código</button>
@@ -324,6 +324,15 @@
 <script>
 
     $('.container-portifolio').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        dots: true,
+        accessibility: false,
+    });
+
+    $('.container-formacoes').slick({
         slidesToShow: 2,
         slidesToScroll: 1,
         autoplay: true,

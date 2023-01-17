@@ -311,15 +311,6 @@ li {
     margin-bottom: 45px;
     position: relative;
     top: 20px;
-    /* border: 3px solid #b13bff; */
-
-}
-
-.background {
-    /* background-color: #b13bff; */
-    /* height: 150px;
-    width: 100%;
-    border-bottom: 3px solid #b13bff; */
 }
 
 .texto-sobre {
@@ -403,13 +394,7 @@ li {
 
 
 
-.formacoes {
-    background-color: #222222;
-    border-bottom: 1px solid rgba(173, 173, 173, 0.219);
-    height: 100vh;
-    min-height: 1400px;
-    text-align: center;
-}
+
 
 .contatos {    
     height: 100vh;
@@ -471,6 +456,18 @@ li {
     margin-top: 60px;
 } */
 
+
+
+.formacoes {
+    background-color: #222222;
+    border-bottom: 1px solid rgba(173, 173, 173, 0.219);
+    height: 100vh;
+    min-height: 1400px;
+    text-align: center;
+    height: 100vh;
+    min-height: 1000px;
+}
+
 .cursos {
     margin: 0 20px 40px 20px;
 }
@@ -478,19 +475,21 @@ li {
 .container-formacoes {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    margin-top: 150px;
 }
 
 .imagem-curso {
     display: block;
-    width: 100%;
-    height: 300px;
+    width: 400px;
+    height: 250px;
     border-radius: 10px;
     margin-bottom: 20px;
 }
 
 .texto-formacao {
-    font-family: poppins, sans-serif;
-    font-size: 16px;  
+    text-align: justify;
+    font-size: 15px;  
+    width: 400px;
 }
 
 
@@ -508,46 +507,34 @@ li {
     border-bottom: 1px solid rgba(173, 173, 173, 0.219);
     width: 100%;
     height: 100vh;
-    min-height: 1000px;
+    min-height: 1200px;
     text-align: center;
     
 }
 
-.container-portifolio {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 50%;
+.container-portifolio {  
+    width: 70%;
     position: relative;
-    left: 25%;
-    height: auto;
-    padding: 30px;
+    left: 15%;
     margin-top: 100px;
 }
 
 .card {
     background-color: #000000;
-    border: 2px solid white;
+    border: 4px solid #b13bff;
     border-radius: 5px;
-    display: flex;
-    flex-direction: column;
     margin-right: 10px;
     margin-left: 10px;
-    padding: 7px;
-    width: 300px;
-}
-
-.card:hover {
-    cursor: pointer;
-    border: 2px solid #b13bff;
-    color: #b13bff;
+    padding: 15px;
+    
 }
 
 .imagens {
     border-radius: 3px;
-    margin-top: 20px;
-    width: 100%;
-    height: 200px;
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 90%;
+    height: 400px;
 } 
 
 .caixa-projetos {
@@ -567,35 +554,40 @@ li {
     font-size: 17px;
     font-family: poppins, sans-serif;
     margin-bottom: 20px;
+    margin-left: 50px;
+    width: 90%;
 }
 
 .deploy {
-    width: 100px;
-    padding: 10px;
+    width: 200px;
+    padding: 15px;
     background-color: #000000;
     color: white;
-    border: 3px solid white;
-    border-radius: 5px;
+    border: 4px solid white;
+    border-radius: 10px;
     margin-right: 10px;
+    font-size: 20px;
 }
 
 .deploy:hover {
-    border: 3px solid #b13bff;
+    border: 4px solid #b13bff;
     cursor: pointer;
     color: #b13bff;
 }
 
 .codigo {
-    width: 100px;
-    padding: 10px;
+    width: 200px;
+    padding: 15px;
     background-color: #000000;
     color: white;
-    border: 3px solid white;
-    border-radius: 5px;
+    border: 4px solid white;
+    border-radius: 10px;
+    margin-right: 10px;
+    font-size: 20px;
 }
 
 .codigo:hover {
-    border: 3px solid #b13bff;
+    border: 4px solid #b13bff;
     cursor: pointer;
     color: #b13bff;
 }
