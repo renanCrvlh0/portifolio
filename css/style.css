@@ -19,19 +19,29 @@ img {
 
 
 body {
-    background-color: #000000;
-    color: white;
+    background-color: #F0F0F0;
+    color: #F0F0F0;
+}
+
+.dark-body {
+    background-color: #000;
 }
 
 header{
     width: 100%;
     height: 80px;
     position: fixed;
-    background-color: #000000;
+    background-color: #F0F0F0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 999;
+    color: #000;
+}
+
+.dark-header {
+    background-color: #000;
+    color: #F0F0F0;
 }
 
 .btn-darkLight {
@@ -39,8 +49,15 @@ header{
     width: 70px;
     height: 60px;
     border-radius: 15px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border: 2px solid #b13bff;
+}
+
+.btn-darkMode {
     background-color: #222222;
-    color: #fff;
+    color: #F0F0F0;
 }
 
 .btn-darkLight:hover {
@@ -52,6 +69,8 @@ header{
 .light-mode {  
     font-size: 22px;
     position: relative;
+    top: 30%;
+    left: 28%;
 }
 
 
@@ -66,26 +85,40 @@ li {
     
 }
 
+
 .logo {
     text-decoration: none;
     list-style: none;
-    color: #fff;
+    color: #000;
     font-size: 22px;
     margin-left: 20px;
     padding: 20px;
     white-space: nowrap;
 }
 
+.dark-logo {
+    color: #F0F0F0;
+}
+
 .navegacao {
     text-decoration: none;
     font-size: 20px;
-    color: white;
+    color: #000;
+}
+
+.dark-navegacao {
+    color: #F0F0F0;
 }
 
 .redes-laterais {
     text-decoration: none;
-    font-size: 20px;
-    color: white;
+    font-size: 40px;
+    color: #000;
+    font-weight: bolder;
+}
+
+.dark-redesLaterais {
+    color: #F0F0F0;
 }
 
 
@@ -121,7 +154,7 @@ li {
     position: fixed;
     display: flex;
     flex-direction: column;
-    margin-top: 500px;
+    margin-top: 700px;
     margin-left: 20px;
 }
 
@@ -234,12 +267,22 @@ li {
 .subtitulos {
     font-size: 15px;
     font-weight: lighter;
+    color: #000;
+}
+
+.dark-subtitulos {
+    color: #F0F0F0;
 }
 
 .subtitulo-sobre {
     padding-top: 40px;
     font-size: 35px;
     font-weight: lighter;
+    color: #000;
+}
+
+.dark-subtituloSobre {
+    color: #F0F0F0;
 }
 
 .container-foto {
@@ -269,6 +312,11 @@ li {
     text-align: justify;
     font-size: 18px;
     padding-top: 20px;
+    color: #000;
+}
+
+.dark-textoSobre {
+    color: #F0F0F0;
 }
 
 .sobre {
@@ -285,16 +333,20 @@ li {
 }
 
 .btn2 {
-    /* margin-left: 300px; */
     width: 200px;
     height: 60px;
     margin-top: 40px;
     font-size: 20px;
     background-color: transparent;
-    border: 3px solid white;
-    color: white;
+    border: 3px solid #000;
+    color: #000;
     border-radius: 15px;  
     
+}
+
+.dark-btn2 {
+    border: 3px solid #F0F0F0;
+    color: #F0F0F0;
 }
 
 .btn2:hover {
@@ -310,14 +362,26 @@ li {
 
 
 
+.perfil {
+    color: #000;
+}
+
+.dark-perfil {
+    color: #F0F0F0;
+}
+
+.perfil-git {
+    color: #000;
+    font-size: 15px;
+}
+
+.dark-perfilGit {
+    color: #F0F0F0;
+}
+
 .perfil p {
     font-size: 20px;
     text-align: center;
-}
-
-.perfil a {
-    color: white;
-    font-size: 15px;
 }
 
 
@@ -331,7 +395,7 @@ li {
 }
 
 .caixa-habilidade {
-    border: 3px solid #fff;
+    border: 3px solid #000;
     padding: 8px;
     border-radius: 10px;
     width: 360px;
@@ -341,12 +405,17 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #000;
+}
+
+.dark-caixaHabilidade {
+    border: 3px solid #F0F0F0;
+    color: #F0F0F0;
 }
 
 .caixa-habilidade:hover {
     cursor: pointer;
     border: 3px solid #b13bff;
-    /* background-color: #b13bff; */
     color: #b13bff;
 }
 
@@ -371,12 +440,16 @@ li {
 
 
 .formacoes {
-    background-color: #222222;
+    background-color: #E1E1E1;
     border-bottom: 1px solid rgba(173, 173, 173, 0.219);
     height: 100vh;
     min-height: 1000px;
     text-align: center;
     height: 100vh;
+}
+
+.dark-formacoes {
+    background-color: #222222;
 }
 
 
@@ -404,11 +477,12 @@ li {
 .texto-formacao {
     text-align: justify;
     font-size: 15px;  
-    
-    
+    color: #000;    
 }
 
-
+.dark-textoFormacao {
+    color: #F0F0F0;
+}
 
 
 
@@ -436,19 +510,24 @@ li {
 }
 
 .card {
-    background-color: #000000;
+    background-color: transparent;
     border: 4px solid #b13bff;
     border-radius: 5px;
     margin-right: 10px;
     margin-left: 10px;
     padding: 15px;
+    color: #000;
     
+}
+
+.dark-card {
+    color: #F0F0F0;
 }
 
 .imagens {
     border-radius: 3px;
     margin-top: 50px;
-    height: 380px;
+    height: 300px;
 } 
 
 .titulo-projeto {
@@ -464,52 +543,48 @@ li {
     margin-bottom: 20px;
 }
 
-.deploy {
+.deploy-codigo {
     width: 150px;
     padding: 15px;
-    background-color: #000000;
-    color: white;
-    border: 4px solid white;
+    background-color: transparent;
+    color: #000;
+    border: 4px solid #000;
     border-radius: 10px;
     margin-right: 10px;
     font-size: 20px;
 }
 
-.deploy:hover {
+.dark-deployCodigo {
+    color: #F0F0F0;
+    border: 4px solid #F0F0F0;
+}
+
+.deploy-codigo:hover {
     border: 4px solid #b13bff;
     cursor: pointer;
     color: #b13bff;
 }
-
-.codigo {
-    width: 150px;
-    padding: 15px;
-    background-color: #000000;
-    color: white;
-    border: 4px solid white;
-    border-radius: 10px;
-    margin-right: 10px;
-    font-size: 20px;
-}
-
-.codigo:hover {
-    border: 4px solid #b13bff;
-    cursor: pointer;
-    color: #b13bff;
-}
-
 
 .contatos {
-    background-color: #222222;
+    background-color: #E1E1E1;
     width: 100%;
     height: 100vh;
     min-height: 1000px;
     text-align: center;
 }
 
+.dark-contatos {
+    background-color: #222222;
+}
+
 .contatar {
     margin-top: 100px;
     margin-bottom: 200px;
+    color: #000;
+}
+
+.dark-contatar {
+    color: #F0F0F0;
 }
 
 .container-contatos {
@@ -525,6 +600,17 @@ li {
     margin-left: 100px;
 }
 
+
+.icone-contatos {
+    font-size: 50px;
+}
+
+.texto-contato {
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+
 .caixa-contatos {
     display: flex;
     flex-direction: column;
@@ -532,6 +618,11 @@ li {
     border-radius: 10px;
     padding: 50px 10px;
     border: 2px solid #b13bff00;
+    color: #000;
+}
+
+.dark-caixaContatos {
+    color: #F0F0F0;
 }
 
 .caixa-contatos:hover {
@@ -540,14 +631,7 @@ li {
     color: #b13bff;
 }
 
-.texto-contato {
-    margin-top: 50px;
-    margin-bottom: 40px;
-}
 
-.icone-contatos {
-    font-size: 50px;
-}
 
 footer {
     display: flex;
@@ -556,6 +640,11 @@ footer {
     align-items: center;
     justify-content: center;
     border-top: 1px solid rgba(173, 173, 173, 0.219);
+    color: #000;
+}
+
+.dark-footer {
+    color: #F0F0F0;
 }
 
 @media (max-width: 1600px) {
