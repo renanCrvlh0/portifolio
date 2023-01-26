@@ -17,7 +17,7 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-    <script type="text/javascript" src="js/script.js"></script>
+    <script type="module" src="js/script.js"></script>
 
     <title>Renan de Carvalho</title>
 </head>
@@ -36,9 +36,9 @@
             </ul>
         </nav>
 
-        <button class="btn-darkLight"><span class="material-symbols-outlined light-mode">
-                light_mode
-            </span></button>
+        <div id="darkMode" class="btn-darkLight"><span class="material-symbols-outlined light-mode">
+                dark_mode
+            </span></div>
     </header>
 
     <div class="redes-sociais">
@@ -71,7 +71,7 @@
 
 
                 <div class="container-foto">
-                    <div class="background"></div>
+
 
 
                     <img src="imagens/foto.jpg" alt="" class="foto-perfil">
@@ -82,7 +82,7 @@
                         <div class="perfil">
 
                             <p>Renan Felipe Araujo de Carvalho</p>
-                            <a href="https://github.com/renanCrvlh0" target="_blank">@renanCrvlh0</a>
+                            <a class="perfil-git" href="https://github.com/renanCrvlh0" target="_blank">@renanCrvlh0</a>
 
                         </div>
 
@@ -198,18 +198,18 @@
                 <h2 class="titulo-projeto">Buscador de CEP</h2>
                 <img class="imagens" src="imagens/busca-cep.png" alt="">
                 <p class="descricao-projeto">Projeto Buscador de CEP, desenvolvido com o intuito de aprendizado em requisições de API. O projeto em si, utiliza o site ViaCEP para buscar os dados solicitados.</p>
-                <button class="deploy">Deploy</button>
-                <button class="codigo">Código</button>
+                <button class="deploy-codigo">Deploy</button>
+                <button class="deploy-codigo">Código</button>
             </div>
 
             <div class="card">
-                <h2 class="titulo-projeto">Calculadora</h2>
-                <img class="imagens" src="imagens/fundo azul.jpg" alt="">
+                <h2 class="titulo-projeto">WikiPharma</h2>
+                <img class="imagens" src="imagens/projeto-integrador.png" alt="">
                 <p class="descricao-projeto">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Distinctio, minima quos suscipit quibusdam ab reiciendis dolore vitae, fugiat et quaerat accusamus,
                     porro dignissimos laborum hic commodi quam. Expedita, consequuntur in.</p>
-                <button class="deploy">Deploy</button>
-                <button class="codigo">Código</button>
+                <button class="deploy-codigo">Deploy</button>
+                <button class="deploy-codigo">Código</button>
             </div>
 
             <div class="card">
@@ -218,8 +218,8 @@
                 <p class="descricao-projeto">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Distinctio, minima quos suscipit quibusdam ab reiciendis dolore vitae, fugiat et quaerat accusamus,
                     porro dignissimos laborum hic commodi quam. Expedita, consequuntur in.</p>
-                <button class="deploy">Deploy</button>
-                <button class="codigo">Código</button>
+                <button class="deploy-codigo">Deploy</button>
+                <button class="deploy-codigo">Código</button>
             </div>
             <div class="card">
                 <h2 class="titulo-projeto">Cineflix</h2>
@@ -227,8 +227,8 @@
                 <p class="descricao-projeto">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Distinctio, minima quos suscipit quibusdam ab reiciendis dolore vitae, fugiat et quaerat accusamus,
                     porro dignissimos laborum hic commodi quam. Expedita, consequuntur in.</p>
-                <button class="deploy">Deploy</button>
-                <button class="codigo">Código</button>
+                <button class="deploy-codigo">Deploy</button>
+                <button class="deploy-codigo">Código</button>
             </div>
             <div class="card">
                 <h2 class="titulo-projeto">Busca CEP2</h2>
@@ -236,8 +236,8 @@
                 <p class="descricao-projeto">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Distinctio, minima quos suscipit quibusdam ab reiciendis dolore vitae, fugiat et quaerat accusamus,
                     porro dignissimos laborum hic commodi quam. Expedita, consequuntur in.</p>
-                <button class="deploy">Deploy</button>
-                <button class="codigo">Código</button>
+                <button class="deploy-codigo">Deploy</button>
+                <button class="deploy-codigo">Código</button>
             </div>
             <div class="card">
                 <h2 class="titulo-projeto">Calculadora2</h2>
@@ -245,8 +245,8 @@
                 <p class="descricao-projeto">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Distinctio, minima quos suscipit quibusdam ab reiciendis dolore vitae, fugiat et quaerat accusamus,
                     porro dignissimos laborum hic commodi quam. Expedita, consequuntur in.</p>
-                <button class="deploy">Deploy</button>
-                <button class="codigo">Código</button>
+                <button class="deploy-codigo">Deploy</button>
+                <button class="deploy-codigo">Código</button>
             </div>
 
             <div class="card">
@@ -255,8 +255,8 @@
                 <p class="descricao-projeto">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Distinctio, minima quos suscipit quibusdam ab reiciendis dolore vitae, fugiat et quaerat accusamus,
                     porro dignissimos laborum hic commodi quam. Expedita, consequuntur in.</p>
-                <button class="deploy">Deploy</button>
-                <button class="codigo">Código</button>
+                <button class="deploy-codigo">Deploy</button>
+                <button class="deploy-codigo">Código</button>
             </div>
             <div class="card">
                 <h2 class="titulo-projeto">Cineflix2</h2>
@@ -264,8 +264,8 @@
                 <p class="descricao-projeto">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Distinctio, minima quos suscipit quibusdam ab reiciendis dolore vitae, fugiat et quaerat accusamus,
                     porro dignissimos laborum hic commodi quam. Expedita, consequuntur in.</p>
-                <button class="deploy">Deploy</button>
-                <button class="codigo">Código</button>
+                <button class="deploy-codigo">Deploy</button>
+                <button class="deploy-codigo">Código</button>
             </div>
 
 

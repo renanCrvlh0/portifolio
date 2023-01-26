@@ -1,24 +1,5 @@
-window.onload = () => {
-    const btnHabilidades = document.querySelectorAll('.btn-habilidades');
-    const teste = document.querySelectorAll('.container-botoes .teste');
-    const arrow = document.querySelectorAll('.btn-habilidades .arrow-symbol');
+import { darkMode } from './darkMode.js';
 
-    if (btnHabilidades.length && teste.length) {
-        teste[0].classList.add('ativo');
+const btnDarkMode = document.querySelector('.btn-darkLight');
 
-        function ativar(index) {
-            teste.forEach((div) => {
-                div.classList.remove('ativo');
-            });
-            teste[index].classList.add('ativo');
-            
-        }
-
-        btnHabilidades.forEach((itemMenu, index) => {
-            itemMenu.addEventListener('click', () => {
-                ativar(index);
-            });
-        });
-    }
-
-}
+btnDarkMode.addEventListener('click', darkMode);
