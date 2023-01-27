@@ -1,7 +1,6 @@
 export function darkMode() {
-  const btnDarkLight = document.querySelector('#darkMode');
-  const iconMode = document.querySelector('.light-mode');
-
+  const habilidade = document.querySelector('.ativar');
+  const fechar = document.querySelector('.fechar');
   const corpo = document.querySelector('body');
   const cabecalho = document.querySelector('header');
   const logo = document.querySelector('.logo');
@@ -23,8 +22,13 @@ export function darkMode() {
   const caixaContatos = document.querySelectorAll('.caixa-contatos');
   const rodape = document.querySelector('footer');
 
+  const btnDarkLight = document.querySelector('#darkMode');
+  const iconMode = document.querySelector('.light-mode');
+
+  habilidade.classList.toggle('dark-habilidade');
+  fechar.classList.toggle('dark-fechar');
+
   btnDarkLight.classList.toggle('btn-darkMode');
-  iconMode.textContent = 'light_mode';
 
   if (iconMode.textContent == 'dark_mode') {
     iconMode.textContent = 'light_mode';
