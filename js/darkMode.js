@@ -14,7 +14,7 @@ export function darkMode() {
   const perfilGit = document.querySelector('.perfil-git');
   const caixaHabilidade = document.querySelectorAll('.caixa-habilidade');
   const formacoes = document.querySelector('.formacoes');
-  const textoFormacao = document.querySelectorAll('.texto-formacao');
+  const formacao = document.querySelectorAll('.formacao');
   const card = document.querySelectorAll('.card');
   const deployCodigo = document.querySelectorAll('.deploy-codigo');
   const contatos = document.querySelector('.contatos');
@@ -64,8 +64,8 @@ export function darkMode() {
 
   formacoes.classList.toggle('dark-formacoes');
 
-  textoFormacao.forEach((formacao) => {
-    formacao.classList.toggle('dark-textoFormacao');
+  formacao.forEach((formacao) => {
+    formacao.classList.toggle('dark-formacao');
   });
 
   card.forEach((cardProjetos) => {
