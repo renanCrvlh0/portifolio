@@ -663,6 +663,13 @@ footer {
     align-items: center;
   }
 
+  .porcentagem5 {
+    background-color: var(--cor1);
+    width: 5%;
+    height: 10px;
+    border-radius: 10px;
+  }
+
   .porcentagem10 {
     background-color: var(--cor1);
     width: 10%;

@@ -1,4 +1,21 @@
 @charset 'UTF-8';
+
+
+:root {
+    --cor1: #ee4d51;
+    --cor-bg: #F0F0F0;
+    --cor-titulo: #000;
+    --cor-btn: #E1E1E1;
+}
+
+.dark:root{
+    --cor1: #b13bff;
+    --cor-bg:#000;
+    --cor-titulo: #fff;
+    --cor-btn: #222222;
+}
+
+
 /* Slider */
 .slick-loading .slick-list
 {
@@ -71,7 +88,7 @@
     line-height: 1;
 
     opacity: .75;
-    color: #b13bff;
+    color: var(--cor1);
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -192,7 +209,7 @@
     text-align: center;
 
     opacity: .25;
-    color: #b13bff;
+    color: var(--cor1);
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -200,5 +217,5 @@
 .slick-dots li.slick-active button:before
 {
     opacity: .75;
-    color: #b13bff;
+    color: var(--cor1);
 }
