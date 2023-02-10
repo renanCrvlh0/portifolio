@@ -457,8 +457,9 @@ svg {
 
 .formacao:hover {
     cursor: pointer;
+    background-color: var(--cor1);
     border: 3px solid var(--cor1);
-    color: var(--cor1);
+    color: var(--cor-btn);
 }
 
 
@@ -673,6 +674,11 @@ footer {
     width: 5%;
     height: 10px;
     border-radius: 10px;
+    animation: carregar5 1.5s ease-out;
+  }
+  @keyframes carregar5 {
+    from {width: 0%;}
+    to{width: 5%;}
   }
 
   .porcentagem10 {
@@ -680,6 +686,12 @@ footer {
     width: 10%;
     height: 10px;
     border-radius: 10px;
+    animation: carregar10 1.5s ease-out;
+  }
+
+  @keyframes carregar10 {
+    from {width: 0%;}
+    to{width: 10%;}
   }
 
   .porcentagem20 {
@@ -687,6 +699,11 @@ footer {
     width: 20%;
     height: 10px;
     border-radius: 10px;
+    animation: carregar20 1.5s ease-out;
+  }
+  @keyframes carregar20 {
+    from {width: 0%;}
+    to{width: 20%;}
   }
 
   .porcentagem25 {
@@ -694,6 +711,12 @@ footer {
     width: 25%;
     height: 10px;
     border-radius: 10px;
+    animation: carregar25 1.5s ease-out;
+  }
+
+  @keyframes carregar25 {
+    from {width: 0%;}
+    to{width: 25%;}
   }
 
   .porcentagem30 {
@@ -701,6 +724,12 @@ footer {
     width: 30%;
     height: 10px;
     border-radius: 10px;
+    animation: carregar30 1.5s ease-out;
+  }
+
+  @keyframes carregar30 {
+    from {width: 0%;}
+    to{width: 30%;}
   }
 
   .porcentagem45 {
@@ -708,6 +737,11 @@ footer {
     width: 45%;
     height: 10px;
     border-radius: 10px;
+    animation: carregar45 1.5s ease-out;
+  }
+  @keyframes carregar45 {
+    from {width: 0%;}
+    to{width: 45%;}
   }
 
   .porcentagem80 {
@@ -715,10 +749,12 @@ footer {
     width: 80%;
     height: 10px;
     border-radius: 10px;
+    animation: carregar80 1.5s ease-out;
   }
-  
-
-
+  @keyframes carregar80 {
+    from {width: 0%;}
+    to{width: 80%;}
+  }
 
 
 
