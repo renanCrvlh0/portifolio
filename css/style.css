@@ -184,17 +184,16 @@ li {
 
 
 .container-apresentacao {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    border: 1px solid red;
     font-size: 20px;
     font-weight: bold;
 }
 
 .texto-portifolio {
-    margin-top: 120px;
+    margin-bottom: 150px;
     color: var(--cor1);
     font-size: 30px;
     font-weight: bold;
@@ -203,12 +202,18 @@ li {
 .titulo-apresentacao {
     font-size: 80px;
     color: var(--cor-titulo);
+    margin-bottom: 30px;
+}
+
+.titulo-apresentacao span {
+    color: var(--cor1);
+    margin-left: 25px;
 }
 
 .funcao {
     font-size: 25px;
     font-weight: normal;
-    color: var(--cor-titulo);
+    color: var(--cor1);
 }
 
 .paragafro-apresentacao {
@@ -235,14 +240,15 @@ li {
 
 
 svg {
-    width: 500px;
+    width: 350px;
     height: 600px;
 }
 
 .btn:hover {
     cursor: pointer;
+    background-color: var(--cor1);
     border: 3px solid var(--cor1);
-    color: var(--cor1);
+    color: var(--cor-btn);
 }
 
 
@@ -668,6 +674,16 @@ footer {
     display: flex;
     align-items: center;
   }
+
+
+  .numeroOpaco {
+    animation: numero 3s ease-out;
+  }
+  @keyframes numero {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
 
   .porcentagem5 {
     background-color: var(--cor1);

@@ -6,7 +6,6 @@ import { ativarUi } from './ativar.js';
 import { ativarFrame } from './ativar.js';
 import { desativar } from './ativar.js';
 
-import { teste } from './teste.js';
 
 const fechar = document.querySelectorAll('.fechar');
 const btnDarkMode = document.querySelector('.btn-darkLight');
@@ -30,6 +29,3 @@ fechar.forEach((item) => {
   item.addEventListener('click', desativar);
 });
 
-const teste = document.querySelector('#teste');
-
-teste.addEventListener('click', teste);
