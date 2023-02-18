@@ -1,5 +1,4 @@
 :root {
-    --cor1: #ee4d51;
     --cor-bg: #F0F0F0;
     --cor-titulo: #000;
     --cor-btn: #E1E1E1;
@@ -7,11 +6,18 @@
 }
 
 .dark:root{
-    --cor1: #b13bff;
     --cor-bg:#000;
     --cor-titulo: #fff;
     --cor-btn: #222222;
     --cor-shadow: #5b5b5b;
+}
+
+.amarelo:root {
+    --cor1: yellow;
+}
+
+.azul:root {
+    --cor1: blue;
 }
 
 
@@ -126,6 +132,37 @@ li {
 .redes-laterais:hover {
     cursor: pointer;
     color: var(--cor1);
+}
+
+.cores {
+    display: flex;
+    position: fixed;
+    top: 100px;
+    left: 1210px;
+    width: 100px;
+    height: 150px;
+    border-top: 3px solid var(--cor-titulo);
+    border-bottom: 3px solid var(--cor-titulo);
+    border-left: 3px solid var(--cor-titulo);
+    border-radius: 10px 0 0 10px;
+}
+
+#amarelo {
+    width: 30px;
+    height: 30px;
+    background-color: yellow;
+    border-radius: 5px;
+}
+
+#amarelo:hover {
+    cursor: pointer;
+}
+
+#azul {
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+    border-radius: 5px;
 }
 
 
@@ -332,6 +369,16 @@ svg {
     font-size: 18px;
     padding-top: 30px;
     color: var(--cor-titulo);
+}
+
+.texto-sobre h1 {
+    border-bottom: 1px solid #c9c9c9;
+    margin-bottom: 20px;
+}
+
+.paragrafo {
+    border-bottom: 1px solid #c9c9c9;
+    padding-bottom: 80px;
 }
 
 .sobre {

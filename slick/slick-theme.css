@@ -2,17 +2,19 @@
 
 
 :root {
-    --cor1: #ee4d51;
     --cor-bg: #F0F0F0;
     --cor-titulo: #000;
     --cor-btn: #E1E1E1;
 }
 
 .dark:root{
-    --cor1: #b13bff;
     --cor-bg:#000;
     --cor-titulo: #fff;
     --cor-btn: #222222;
+}
+
+.amarelo:root {
+    --cor-1: yellow;
 }
 
 

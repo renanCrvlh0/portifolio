@@ -1,4 +1,4 @@
-import { darkMode } from './darkMode.js';
+import { darkMode, yellowMode, blueMode } from './darkMode.js';
 import { ativarFront } from './ativar.js';
 import { ativarBack } from './ativar.js';
 import { ativarBanco } from './ativar.js';
@@ -6,9 +6,10 @@ import { ativarUi } from './ativar.js';
 import { ativarFrame } from './ativar.js';
 import { desativar } from './ativar.js';
 
-
 const fechar = document.querySelectorAll('.fechar');
 const btnDarkMode = document.querySelector('.btn-darkLight');
+const btnYellow = document.querySelector('#amarelo');
+const btnBlue = document.querySelector('#azul');
 
 const front = document.querySelector('.front-end');
 const back = document.querySelector('.back-end');
@@ -18,6 +19,8 @@ const frame = document.querySelector('.frameworks');
 const soft = document.querySelector('.soft-skills');
 
 btnDarkMode.addEventListener('click', darkMode);
+btnYellow.addEventListener('click', yellowMode);
+btnBlue.addEventListener('click', blueMode);
 
 front.addEventListener('click', ativarFront);
 back.addEventListener('click', ativarBack);
@@ -28,4 +31,3 @@ frame.addEventListener('click', ativarFrame);
 fechar.forEach((item) => {
   item.addEventListener('click', desativar);
 });
-

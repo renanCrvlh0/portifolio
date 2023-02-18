@@ -10,3 +10,11 @@ export function darkMode() {
     iconMode.textContent = 'dark_mode';
   }
 }
+
+export function yellowMode() {
+  const doc = document.documentElement.classList.toggle('amarelo');
+}
+
+export function blueMode() {
+  const doc = document.documentElement.classList.toggle('azul');
+}
