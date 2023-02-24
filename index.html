@@ -13,13 +13,17 @@
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
 
+
+
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-    <script type="module" src="js/script.js"></script>
+</head>
 
-    <title>Renan de Carvalho</title>
+<script type="module" src="js/script.js"></script>
+
+<title>Renan de Carvalho</title>
 </head>
 
 <body>
@@ -142,6 +146,15 @@
                 <p>X</p>
             </div>
             <div class="barra-porcentagem">
+                <p>Bootstrap</p>
+                <div class="container-barraPorcentagem">
+                    <div class="barra">
+                        <div class="porcentagem30"></div>
+                    </div>
+                    <p class="numeroOpaco">30%</p>
+                </div>
+            </div>
+            <div class="barra-porcentagem">
                 <p>Node.js</p>
                 <div class="container-barraPorcentagem">
                     <div class="barra">
@@ -181,7 +194,9 @@
 
 
         <div class="container-cores">
-            <div class="aba-cores"></div>
+            <div class="aba-cores"><span class="material-symbols-outlined paleta">
+                    palette
+                </span></div>
             <div class="cores">
                 <div id="amarelo"></div>
                 <div id="azul"></div>
@@ -242,36 +257,42 @@
 
                     <div class="texto-sobre">
                         <h1>Olá, Mundo!!!</h1>
-                        <p>Cursando o último ano de Ciência da Computação, atuo no mercado como Suporte Técnico. Sempre apaixonado pela área Tecnológica.
+                        <p>Eu sou o Renan, tenho 22 anos e estou cursando o último ano de Ciência da Computação, atualmente atuo no mercado como Suporte Técnico. Sempre apaixonado pela área Tecnológica.
                             Amante do desenvolvimento Front End, criativo e sempre buscando novas Skills para me tornar um melhor profissional.</p>
                         <br />
                         <p class="paragrafo">Atualmente adquirindo conhecimentos em Node.js e React. Diariamente absorvendo conhecimentos de Clean Code/Architecture. Sou proativo, curioso e motivado em encontrar soluções para problemas utilizando tecnologia.</p>
                         <a href="docs/Boleto ReCB - SMG - A FACULDADE.pdf" download="boleto"><button class="btn2">DOWNLOAD CV</button></a>
                     </div>
 
-                </div>
-
-                <div class="skills">
-
-                    <div class="habilidades-teste">
-
-                        <p class="caixa-habilidade front-end">Front End</p>
-
-
-                        <p class="caixa-habilidade back-end">Back End</p>
-
-                        <p class="caixa-habilidade banco-dados">Banco de Dados</p>
-
-                        <p class="caixa-habilidade ui-ux">UI / UX</p>
-
-                        <p class="caixa-habilidade frameworks">Frameworks</p>
-
-                        <p class="caixa-habilidade soft-skills">Soft Skills</p>
-
-
+                    <div class="frase">
+                        <span class="material-symbols-outlined">
+                            format_quote
+                        </span>
+                        <h1>Não vale a pena viver sonhando e se esquecer de viver. - Harry Potter</h1>
                     </div>
+                </div>
+
+
+
+                <div class="habilidades-teste">
+
+                    <button class="caixa-habilidade front-end">Front End</button>
+
+
+                    <button class="caixa-habilidade back-end">Back End</button>
+
+                    <button class="caixa-habilidade banco-dados">Banco de Dados</button>
+
+                    <button class="caixa-habilidade ui-ux">UI / UX</button>
+
+                    <button class="caixa-habilidade frameworks">Frameworks</button>
+
+                    <button class="caixa-habilidade soft-skills">Soft Skills</button>
+
 
                 </div>
+
+
 
 
         </section>
@@ -283,102 +304,71 @@
                 <h3 class="subtitulos">Especializações</h3>
 
                 <div class="container-formacoes">
-                    <div id="teste" class="formacao">
-                        <div class="cursos">
-                            <p class="texto-formacao">HTML5</p>
-                        </div>
-                    </div>
 
-                    <div class="formacao">
-                        <div class="cursos">
-                            <p class="texto-formacao">Lógica de programação: comece em lógica com o jogo Pong e Javascript</p>
-                        </div>
-                    </div>
+                    <button class="formacao">
+                        <p class="texto-formacao">HTML5</p>
+                    </button>
 
-                    <div class="formacao">
-                        <div class="cursos">
-                            <p class="texto-formacao">JavaScript: Arrays</p>
-                        </div>
-                    </div>
+                    <button class="formacao">
+                        <p class="texto-formacao">Lógica de programação: comece em lógica com o jogo Pong e Javascript</p>
+                    </button>
 
-                    <div class="formacao">
-                        <div class="cursos">
-                            <p class="texto-formacao">JavaScript: tipos, variáveis e funções</p>
-                        </div>
-                    </div>
+                    <button class="formacao">
+                        <p class="texto-formacao">JavaScript: Arrays</p>
+                    </button>
 
-                    <div class="formacao">
-                        <div class="cursos">
-                            <p class="texto-formacao">HTML e CSS: ambientes de desenvolvimento, estrutura de arquivos e tags.</p>
-                        </div>
-                    </div>
+                    <button class="formacao">
+                        <p class="texto-formacao">JavaScript: tipos, variáveis e funções</p>
+                    </button>
+
+                    <button class="formacao">
+                        <p class="texto-formacao">HTML e CSS: ambientes de desenvolvimento, estrutura de arquivos e tags.</p>
+                    </button>
 
 
-                    <div class="formacao">
-                        <div class="cursos">
-                            <p class="texto-formacao">HTML e CSS parte 1: crie uma página da Web</p>
-                        </div>
-                    </div>
+                    <button class="formacao">
+                        <p class="texto-formacao">HTML e CSS parte 1: crie uma página da Web</p>
+                    </button>
 
-                    <div class="formacao">
-                        <div class="cursos">
-                            <p class="texto-formacao">HTML e CSS parte 2: posicionamento, listas e navegação</p>
-                        </div>
-                    </div>
+                    <button class="formacao">
+                        <p class="texto-formacao">HTML e CSS parte 2: posicionamento, listas e navegação</p>
+                    </button>
 
-                    <div class="formacao">
-                        <div class="cursos">
-                            <p class="texto-formacao">HTML e CSS parte 3: trabalhando com formulários e tabelas</p>
-                        </div>
-                    </div>
+                    <button class="formacao">
+                        <p class="texto-formacao">HTML e CSS parte 3: trabalhando com formulários e tabelas</p>
+                    </button>
 
-                    <div class="formacao">
-                        <div class="cursos">
-                            <p class="texto-formacao">HTML e CSS parte 4: avançando no CSS</p>
-                        </div>
-                    </div>
+                    <button class="formacao">
+                        <p class="texto-formacao">HTML e CSS parte 4: avançando no CSS</p>
+                    </button>
 
-                    <div class="formacao">
-                        <div class="cursos">
-                            <p class="texto-formacao">JavaScript: explorando a liguagem</p>
-                        </div>
-                    </div>
+                    <button class="formacao">
+                        <p class="texto-formacao">JavaScript: explorando a liguagem</p>
+                    </button>
 
-                    <div class="formacao">
-                        <div class="cursos">
-                            <p class="texto-formacao">JavaScript: interfaces e Herança em Orientação a Objetos</p>
-                        </div>
-                    </div>
+                    <button class="formacao">
+                        <p class="texto-formacao">JavaScript: interfaces e Herança em Orientação a Objetos</p>
+                    </button>
 
-                    <div class="formacao">
-                        <div class="cursos">
-                            <p class="texto-formacao">JavaScript: programando a Orientação a Objetos</p>
-                        </div>
-                    </div>
+                    <button class="formacao">
+                        <p class="texto-formacao">JavaScript: programando a Orientação a Objetos</p>
+                    </button>
 
-                    <div class="formacao">
-                        <div class="cursos">
-                            <p class="texto-formacao">JavaScript: programando na linguagem da web</p>
-                        </div>
-                    </div>
+                    <button class="formacao">
+                        <p class="texto-formacao">JavaScript: programando na linguagem da web</p>
+                    </button>
 
-                    <div class="formacao">
-                        <div class="cursos">
-                            <p class="texto-formacao">Git e Github: controle e compartilhe seu código</p>
-                        </div>
-                    </div>
+                    <button class="formacao">
+                        <p class="texto-formacao">Git e Github: controle e compartilhe seu código</p>
+                    </button>
 
-                    <div class="formacao">
-                        <div class="cursos">
-                            <p class="texto-formacao">Git e Github: estratégias de ramificação, Conflitos e Pull Requests</p>
-                        </div>
-                    </div>
+                    <button class="formacao">
+                        <p class="texto-formacao">Git e Github: estratégias de ramificação, Conflitos e Pull Requests</p>
+                    </button>
 
-                    <div class="formacao">
-                        <div class="cursos">
-                            <p class="texto-formacao">LGPD: conhecendo e entendendo seus impactos</p>
-                        </div>
-                    </div>
+                    <button class="formacao">
+                        <p class="texto-formacao">LGPD: conhecendo e entendendo seus impactos</p>
+                    </button>
                 </div>
 
             </div>
@@ -509,7 +499,7 @@
 <script>
 
     $('.container-portifolio').slick({
-        slidesToShow: 2,
+        slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,

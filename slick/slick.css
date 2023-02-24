@@ -2,7 +2,7 @@
 .slick-slider
 {
     position: relative;
-
+    margin: 25px;
     display: flex;
     box-sizing: border-box;
 
@@ -78,9 +78,8 @@
 {
     display: none;
     float: left;
-
-    height: 650px;
-    min-height: 1px;
+    height: 800px;
+    min-height: 2px;
 }
 [dir='rtl'] .slick-slide
 {
