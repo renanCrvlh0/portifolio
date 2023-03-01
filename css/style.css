@@ -181,21 +181,21 @@ li {
     align-items: center;
     position: fixed;
     top: 100px;
-    left: 1277px;
+    left: 1831px;
     width: 350px;
 }
 
 .ativarCores {
     animation: esconde .8s ease-out;
-    left: 1230px;
+    left: 1784px;
 }
 
 @keyframes esconde {
     0% {
-       left: 1277px;
+       left: 1831px;
     }
     100% {
-        left: 1230px;
+        left: 1784px;
     }
 }
 
@@ -613,17 +613,16 @@ svg {
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
-    gap: 40px;
+    gap: 30px 120px;
 }
 
 .formacao {
     font-size: 18px;
     border: 3px solid var(--cor1);
     border-radius: 10px;
-    width: 250px;
+    width: 323px;
     height: 100px;
     background-color: transparent;
-    /* box-shadow: 0 3px 5px var(--cor-shadow); */
     color: var(--cor1);
     padding: 10px;
 }
@@ -994,6 +993,32 @@ footer {
 
     .texto-portifolio {
         margin-bottom: 100px;
+    }
+
+    .container-cores {
+        left: 1277px;
+    }
+    
+    .ativarCores {
+        animation: esconde .8s ease-out;
+        left: 1230px;
+    }
+    
+    @keyframes esconde {
+        0% {
+           left: 1277px;
+        }
+        100% {
+            left: 1230px;
+        }
+    }
+
+    .container-formacoes {
+        gap: 40px;
+    }
+    
+    .formacao {
+        width: 250px;
     }
 }
 

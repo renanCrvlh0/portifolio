@@ -31,8 +31,49 @@ const doc = document.documentElement;
 
 cores.forEach((item) => {
   item.addEventListener('click', () => {
-    const cor = item.id;
-    doc.classList.add(cor);
+    if (item.id == 'amarelo') {
+      doc.classList.remove('azul');
+      doc.classList.remove('rosa');
+      doc.classList.remove('roxo');
+      doc.classList.remove('vermelho');
+      doc.classList.remove('verde');
+      doc.classList.add('amarelo');
+    } else if (item.id == 'azul') {
+      doc.classList.remove('amarelo');
+      doc.classList.remove('rosa');
+      doc.classList.remove('roxo');
+      doc.classList.remove('vermelho');
+      doc.classList.remove('verde');
+      doc.classList.add('azul');
+    } else if (item.id == 'rosa') {
+      doc.classList.remove('amarelo');
+      doc.classList.remove('azul');
+      doc.classList.remove('roxo');
+      doc.classList.remove('vermelho');
+      doc.classList.remove('verde');
+      doc.classList.add('rosa');
+    } else if (item.id == 'roxo') {
+      doc.classList.remove('amarelo');
+      doc.classList.remove('azul');
+      doc.classList.remove('rosa');
+      doc.classList.remove('vermelho');
+      doc.classList.remove('verde');
+      doc.classList.add('roxo');
+    } else if (item.id == 'vermelho') {
+      doc.classList.remove('amarelo');
+      doc.classList.remove('azul');
+      doc.classList.remove('rosa');
+      doc.classList.remove('roxo');
+      doc.classList.remove('verde');
+      doc.classList.add('vermelho');
+    } else if (item.id == 'verde') {
+      doc.classList.remove('amarelo');
+      doc.classList.remove('azul');
+      doc.classList.remove('rosa');
+      doc.classList.remove('roxo');
+      doc.classList.remove('vermelho');
+      doc.classList.add('verde');
+    }
   });
 });
 
