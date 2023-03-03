@@ -205,22 +205,22 @@ li {
     align-items: center;
     position: fixed;
     top: 100px;
-    left: 1831px;
+    left: 1833px;
     width: 350px;
 }
 
 .ativarCores {
     animation: esconde .8s ease-out;
-    left: 1784px;
+    left: 1786px;
 }
 
 @keyframes esconde {
     0% {
-        left: 1831px;
+        left: 1833px;
     }
 
     100% {
-        left: 1784px;
+        left: 1786px;
     }
 }
 
@@ -1039,6 +1039,36 @@ footer {
         width: 80%;
     }
 }
+
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: var(--cor1);
+    color: var(--cor-bg);
+    padding: 15px;
+    border-radius: 4px;
+    animation: topo 2s ease-in-out infinite;
+  }
+
+  @keyframes topo {
+    to {
+        transform: translate(-20px, -15px);
+    }
+
+    from {
+        transform: translate(20px, 15px);
+    }
+  }
+  
+  #topBtn:hover {
+    cursor: pointer;
+  }
 
 
 

@@ -80,3 +80,22 @@ frame.addEventListener('click', ativarFrame);
 fechar.forEach((item) => {
   item.addEventListener('click', desativar);
 });
+
+// Quando o usuário rolar a página, mostrar ou ocultar o botão
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById('topBtn').style.display = 'block';
+  } else {
+    document.getElementById('topBtn').style.display = 'none';
+  }
+}
+
+// Quando o usuário clicar no botão, rolar para o topo da página
+document.getElementById('topBtn').onclick = function () {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+};
