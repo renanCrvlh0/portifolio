@@ -6,12 +6,16 @@
     --cor-shadow: #c9c9c9;
 }
 
-.dark:root{
+.dark:root {
     --cor1: #F0F0F0;
-    --cor-bg:#000;
+    --cor-bg: #000;
     --cor-titulo: #fff;
     --cor-btn: #222222;
     --cor-shadow: #5b5b5b;
+}
+
+.laranja:root {
+    --cor1: #fb6b02;
 }
 
 .amarelo:root {
@@ -64,14 +68,34 @@ img {
 body {
     background-color: var(--cor-bg);
     color: var(--cor-bg);
-    
+
+    scrollbar-color: var(--cor-titulo);
+
 }
+
+body::-webkit-scrollbar {
+    width: 13px;
+  }
+  
+body::-webkit-scrollbar-track {
+    background: var(--cor-shadow);
+    border-radius: 10px; 
+  }
+  
+body::-webkit-scrollbar-thumb {
+    background-color: var(--cor1);
+    border-radius: 10px;
+  }
+
 
 .ativar-opacidade {
     opacity: .1;
+    z-index: 1;
+    pointer-events: none;
+    overflow: hidden;
 }
 
-header{
+header {
     width: 100%;
     height: 80px;
     position: fixed;
@@ -99,7 +123,7 @@ header{
     color: var(--cor1);
 }
 
-.light-mode {  
+.light-mode {
     font-size: 22px;
     position: relative;
     top: 30%;
@@ -113,9 +137,9 @@ li {
     list-style: none;
 }
 
-.container-navegacao li + li {
+.container-navegacao li+li {
     margin-left: 40px;
-    
+
 }
 
 
@@ -150,12 +174,12 @@ li {
     cursor: pointer;
 }
 
-.menu-navagacao{
+.menu-navagacao {
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 100%;
-    
+
 }
 
 .container-navegacao {
@@ -192,8 +216,9 @@ li {
 
 @keyframes esconde {
     0% {
-       left: 1831px;
+        left: 1831px;
     }
+
     100% {
         left: 1784px;
     }
@@ -204,7 +229,7 @@ li {
     align-items: center;
     justify-content: center;
     width: 30px;
-    height: 250px;
+    height: 350px;
     background-color: var(--cor1);
     border-radius: 10px 0 0 10px;
 }
@@ -223,11 +248,23 @@ li {
     justify-content: space-around;
     flex-wrap: wrap;
     width: 50px;
-    height: 250px;
+    height: 350px;
     padding: 5px;
     border-left: 3px solid var(--cor1);
     border-top: 3px solid var(--cor1);
     border-bottom: 3px solid var(--cor1);
+    background-color: var(--cor-bg);
+}
+
+#laranja {
+    width: 35px;
+    height: 35px;
+    background-color: #fb6b02;
+    border-radius: 5px;
+}
+
+#laranja:hover {
+    cursor: pointer;
 }
 
 #amarelo {
@@ -296,6 +333,22 @@ li {
     cursor: pointer;
 }
 
+#apagar {
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: var(--cor-titulo);
+    color: var(--cor-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+#apagar:hover {
+    cursor: pointer;
+}
+
 .fa-brands {
     font-size: 25px;
     padding: 10px;
@@ -313,7 +366,7 @@ li {
 
 
 
-.apresentacao{
+.apresentacao {
     background-color: var(--cor-btn);
     text-align: center;
     width: 100%;
@@ -321,7 +374,7 @@ li {
     min-height: 900px;
     padding-top: 250px;
     padding-bottom: 350px;
-    align-content: center;    
+    align-content: center;
 }
 
 
@@ -355,11 +408,11 @@ li {
 
 .nome::first-letter {
     color: var(--cor1);
-} 
+}
 
 .sobrenome::first-letter {
     color: var(--cor1);
-} 
+}
 
 
 
@@ -423,7 +476,7 @@ svg {
 
 .config-seccao {
     padding: 150px 0 100px;
-    
+
 }
 
 .titulos {
@@ -452,7 +505,7 @@ svg {
     align-items: center;
     width: 400px;
     border-radius: 10px;
-} 
+}
 
 .foto-perfil {
     border: 3px solid var(--cor1);
@@ -518,7 +571,7 @@ svg {
     background-color: transparent;
     border: 3px solid var(--cor1);
     color: var(--cor1);
-    border-radius: 15px;  
+    border-radius: 15px;
     margin-bottom: 50px;
 
 }
@@ -556,7 +609,7 @@ svg {
     flex-wrap: wrap;
     margin-top: 50px;
     justify-content: space-between;
-    align-items: center;    
+    align-items: center;
 }
 
 .caixa-habilidade {
@@ -584,7 +637,7 @@ svg {
 
 
 
-.contatos {    
+.contatos {
     height: 100vh;
     min-height: 900px;
 }
@@ -608,7 +661,7 @@ svg {
 }
 
 .container-formacoes {
-    margin-top: 80px; 
+    margin-top: 80px;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -644,10 +697,10 @@ svg {
     height: 100vh;
     min-height: 1200px;
     text-align: center;
-    
+
 }
 
-.container-portifolio {  
+.container-portifolio {
     width: 80%;
     position: relative;
     left: 9%;
@@ -672,7 +725,7 @@ svg {
     min-height: 400px;
     border-radius: 3px;
     margin-top: 50px;
-} 
+}
 
 .titulo-projeto {
     text-align: center;
@@ -729,7 +782,7 @@ svg {
 }
 
 
-.container-contatos div + div {
+.container-contatos div+div {
     margin-left: 100px;
 }
 
@@ -812,134 +865,180 @@ footer {
     left: 35%;
     box-shadow: 0 3px 5px var(--cor-shadow);
     animation: scale 1.2s ease-out;
-  }
+}
 
 
-  @keyframes scale {
+@keyframes scale {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
-  }
+}
 
-  .barra-porcentagem {
+.barra-porcentagem {
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     text-align: start;
-  }
+}
 
-  .barra {
+.barra {
     background-color: rgba(173, 173, 173, 0.219);
     width: 100%;
     height: 10px;
     border-radius: 10px;
     margin-right: 20px;
-  }
+}
 
-  .container-barraPorcentagem {
+.container-barraPorcentagem {
     display: flex;
     align-items: center;
-  }
+}
 
 
-  .numeroOpaco {
+.numeroOpaco {
     animation: numero 3s ease-out;
-  }
-  @keyframes numero {
-    from {opacity: 0;}
-    to {opacity: 1;}
-  }
+}
+
+@keyframes numero {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
 
 
-  .porcentagem5 {
+.porcentagem5 {
     background-color: var(--cor1);
     width: 5%;
     height: 10px;
     border-radius: 10px;
     animation: carregar5 1.5s ease-out;
-  }
-  @keyframes carregar5 {
-    from {width: 0%;}
-    to{width: 5%;}
-  }
+}
 
-  .porcentagem10 {
+@keyframes carregar5 {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 5%;
+    }
+}
+
+.porcentagem10 {
     background-color: var(--cor1);
     width: 10%;
     height: 10px;
     border-radius: 10px;
     animation: carregar10 1.5s ease-out;
-  }
+}
 
-  @keyframes carregar10 {
-    from {width: 0%;}
-    to{width: 10%;}
-  }
+@keyframes carregar10 {
+    from {
+        width: 0%;
+    }
 
-  .porcentagem20 {
+    to {
+        width: 10%;
+    }
+}
+
+.porcentagem20 {
     background-color: var(--cor1);
     width: 20%;
     height: 10px;
     border-radius: 10px;
     animation: carregar20 1.5s ease-out;
-  }
-  @keyframes carregar20 {
-    from {width: 0%;}
-    to{width: 20%;}
-  }
+}
 
-  .porcentagem25 {
+@keyframes carregar20 {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 20%;
+    }
+}
+
+.porcentagem25 {
     background-color: var(--cor1);
     width: 25%;
     height: 10px;
     border-radius: 10px;
     animation: carregar25 1.5s ease-out;
-  }
+}
 
-  @keyframes carregar25 {
-    from {width: 0%;}
-    to{width: 25%;}
-  }
+@keyframes carregar25 {
+    from {
+        width: 0%;
+    }
 
-  .porcentagem30 {
+    to {
+        width: 25%;
+    }
+}
+
+.porcentagem30 {
     background-color: var(--cor1);
     width: 30%;
     height: 10px;
     border-radius: 10px;
     animation: carregar30 1.5s ease-out;
-  }
+}
 
-  @keyframes carregar30 {
-    from {width: 0%;}
-    to{width: 30%;}
-  }
+@keyframes carregar30 {
+    from {
+        width: 0%;
+    }
 
-  .porcentagem45 {
+    to {
+        width: 30%;
+    }
+}
+
+.porcentagem45 {
     background-color: var(--cor1);
     width: 45%;
     height: 10px;
     border-radius: 10px;
     animation: carregar45 1.5s ease-out;
-  }
-  @keyframes carregar45 {
-    from {width: 0%;}
-    to{width: 45%;}
-  }
+}
 
-  .porcentagem80 {
+@keyframes carregar45 {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 45%;
+    }
+}
+
+.porcentagem80 {
     background-color: var(--cor1);
     width: 80%;
     height: 10px;
     border-radius: 10px;
     animation: carregar80 1.5s ease-out;
-  }
-  @keyframes carregar80 {
-    from {width: 0%;}
-    to{width: 80%;}
-  }
+}
+
+@keyframes carregar80 {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 80%;
+    }
+}
 
 
 
@@ -976,7 +1075,7 @@ footer {
         font-size: 20px;
     }
 
-  
+
     .config-seccao {
         padding: 80px 0 100px;
     }
@@ -985,10 +1084,10 @@ footer {
         min-height: 1300px;
     }
 
-    .apresentacao{
+    .apresentacao {
         min-height: 800px;
         padding-top: 180px;
-        padding-bottom: 0;  
+        padding-bottom: 0;
     }
 
     .texto-portifolio {
@@ -996,34 +1095,36 @@ footer {
     }
 
     .container-cores {
-        left: 1277px;
+        left: 1279px;
+        width: 400;
     }
-    
+
     .ativarCores {
         animation: esconde .8s ease-out;
-        left: 1230px;
+        left: 1232px;
     }
-    
+
     @keyframes esconde {
         0% {
-           left: 1277px;
+            left: 1279px;
         }
+
         100% {
-            left: 1230px;
+            left: 1232px;
         }
     }
 
     .container-formacoes {
         gap: 40px;
     }
-    
+
     .formacao {
         width: 250px;
     }
 }
 
 @media (max-width: 1000px) {
-    .navegacao{
+    .navegacao {
         display: none;
     }
 

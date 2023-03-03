@@ -1,10 +1,10 @@
 import { darkMode } from './darkMode.js';
-import { ativarFront } from './ativar.js';
-import { ativarBack } from './ativar.js';
-import { ativarBanco } from './ativar.js';
-import { ativarUi } from './ativar.js';
-import { ativarFrame } from './ativar.js';
-import { desativar } from './ativar.js';
+import { ativarFront } from './ativarHabilidades.js';
+import { ativarBack } from './ativarHabilidades.js';
+import { ativarBanco } from './ativarHabilidades.js';
+import { ativarUi } from './ativarHabilidades.js';
+import { ativarFrame } from './ativarHabilidades.js';
+import { desativar } from './ativarHabilidades.js';
 
 const fechar = document.querySelectorAll('.fechar');
 const btnDarkMode = document.querySelector('.btn-darkLight');
@@ -16,6 +16,7 @@ const btnRed = document.querySelector('#vermelho');
 const btnGreen = document.querySelector('#verde');
 
 const btnCores = document.querySelector('.aba-cores');
+const btnApagarCor = document.querySelector('#apagar');
 
 const front = document.querySelector('.front-end');
 const back = document.querySelector('.back-end');
@@ -31,48 +32,20 @@ const doc = document.documentElement;
 
 cores.forEach((item) => {
   item.addEventListener('click', () => {
-    if (item.id == 'amarelo') {
-      doc.classList.remove('azul');
-      doc.classList.remove('rosa');
-      doc.classList.remove('roxo');
-      doc.classList.remove('vermelho');
-      doc.classList.remove('verde');
-      doc.classList.add('amarelo');
-    } else if (item.id == 'azul') {
-      doc.classList.remove('amarelo');
-      doc.classList.remove('rosa');
-      doc.classList.remove('roxo');
-      doc.classList.remove('vermelho');
-      doc.classList.remove('verde');
-      doc.classList.add('azul');
-    } else if (item.id == 'rosa') {
-      doc.classList.remove('amarelo');
-      doc.classList.remove('azul');
-      doc.classList.remove('roxo');
-      doc.classList.remove('vermelho');
-      doc.classList.remove('verde');
-      doc.classList.add('rosa');
-    } else if (item.id == 'roxo') {
-      doc.classList.remove('amarelo');
-      doc.classList.remove('azul');
-      doc.classList.remove('rosa');
-      doc.classList.remove('vermelho');
-      doc.classList.remove('verde');
-      doc.classList.add('roxo');
-    } else if (item.id == 'vermelho') {
-      doc.classList.remove('amarelo');
-      doc.classList.remove('azul');
-      doc.classList.remove('rosa');
-      doc.classList.remove('roxo');
-      doc.classList.remove('verde');
-      doc.classList.add('vermelho');
-    } else if (item.id == 'verde') {
-      doc.classList.remove('amarelo');
-      doc.classList.remove('azul');
-      doc.classList.remove('rosa');
-      doc.classList.remove('roxo');
-      doc.classList.remove('vermelho');
-      doc.classList.add('verde');
+    const classesPorId = {
+      laranja: 'laranja',
+      amarelo: 'amarelo',
+      azul: 'azul',
+      rosa: 'rosa',
+      roxo: 'roxo',
+      vermelho: 'vermelho',
+      verde: 'verde',
+    };
+
+    if (classesPorId.hasOwnProperty(item.id)) {
+      const classe = classesPorId[item.id];
+      doc.classList.remove(...Object.values(classesPorId));
+      doc.classList.add(classe);
     }
   });
 });
@@ -80,6 +53,22 @@ cores.forEach((item) => {
 btnCores.addEventListener('click', () => {
   const containerCores = document.querySelector('.container-cores');
   containerCores.classList.toggle('ativarCores');
+});
+
+btnApagarCor.addEventListener('click', () => {
+  const classesParaRemover = [
+    'laranja',
+    'amarelo',
+    'azul',
+    'rosa',
+    'roxo',
+    'vermelho',
+    'verde',
+  ];
+
+  if (classesParaRemover.some((classe) => doc.classList.contains(classe))) {
+    classesParaRemover.forEach((classe) => doc.classList.remove(classe));
+  }
 });
 
 front.addEventListener('click', ativarFront);
