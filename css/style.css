@@ -1058,11 +1058,11 @@ footer {
 
   @keyframes topo {
     to {
-        transform: translate(-20px, -15px);
+        transform: translateY(-50px);
     }
 
     from {
-        transform: translate(20px, 15px);
+        transform: translateY(0);
     }
   }
   
