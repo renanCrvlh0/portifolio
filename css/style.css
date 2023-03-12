@@ -1392,7 +1392,7 @@ footer {
         top: 920px;
         left: 100px;
         height: 65px;
-        background-color: var(--cor-titulo);
+        background-color: var(--cor-btn);
         border-radius: 18px;
         box-shadow: -1.5px -1.5px 10px var(--cor-shadow);
     }
@@ -1507,6 +1507,10 @@ footer {
 
     .titulo-apresentacao {
         font-size: 60px;
+    }
+
+    #topBtn {
+        right: 15px;
     }
 
 }
