@@ -51,8 +51,8 @@ cores.forEach((item) => {
 });
 
 btnCores.addEventListener('click', () => {
-  const containerCores = document.querySelector('.container-cores');
-  containerCores.classList.toggle('ativarCores');
+  const containerCores = document.querySelector('.cores');
+  containerCores.classList.toggle('slide-in-blurred-left');
 });
 
 btnApagarCor.addEventListener('click', () => {
