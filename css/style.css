@@ -1950,3 +1950,174 @@ footer {
     }
 
 }
+
+@media (max-width: 375px) {
+    .titulos {
+        font-size: 20px;
+    }
+
+    .subtitulo-sobre {
+        font-size: 14px;
+    }
+
+    .container-navegacao {
+        top: 600px;
+        left: 60px;
+        height: 50px;
+    }
+
+    .logo {
+        margin-left: 2px;
+    }
+
+    .btn-darkLight {
+        width: 35px;
+        height: 35px;
+        border-radius: 5px;
+    }
+
+    .btn-darkLight .light-mode {
+        font-size: 20px;
+    }
+
+    .redes-sociais {
+        margin-top: 550px;
+        margin-left: 0px;
+    }
+
+    .container-cores {
+        top: 160px;
+        left: 8px;
+    }
+
+    .aba-cores  {
+        border-radius: 6px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .cores {
+        left: 8px;
+        top: 200px;
+    }
+
+    .container-navegacao .icones-menu {
+        font-size: 20px;
+    }
+
+    .apresentacao {
+        min-height: 895px;
+        padding-top: 180px;
+    }
+
+    .texto-portifolio {
+        font-size: 25px;
+        margin-bottom: 50px;
+    }
+
+    .titulo-apresentacao {
+        margin-bottom: 10px;
+    }
+
+    .titulo-apresentacao .nome {
+        font-size: 45px;
+    }
+    .titulo-apresentacao .sobrenome {
+        font-size: 45px;
+    }
+
+    .funcao {
+        font-size: 22px;
+    }
+
+    .btn {
+        width: 200px;
+        height: 60px;
+        margin-top: 40px;
+        font-size: 18px;
+    }
+
+    .container-sobre {
+        max-width: 550px;
+        padding: 5px 5px 0 5px;
+    }
+
+    .subtitulo-sobre {
+        padding-top: 20px;
+    }
+
+    .container-foto {
+        width: 200px;
+        margin-left: 60px;
+    }
+
+    .foto-perfil {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 25px;
+    }
+
+    .perfil p{
+        font-size: 14px;
+    }
+
+    .perfil-git {
+        font-size: 12px;
+    }
+
+    .texto-sobre h1 {
+        margin-top: 8px;
+        font-size: 20px;
+    }
+
+    .texto-sobre p {
+        font-size: 14px;
+    }
+    
+    .frase {
+        font-size: 6px;
+        margin: 0;
+    }
+    
+    .frase span {
+        font-size: 30px;
+        margin: 0;
+    }
+    
+    
+    .sobre {
+        text-align: center;
+        height: 100vh;
+        min-height: 1000px;
+    }
+
+    .container-formacoes {
+        margin-left: 35px;
+    }
+
+    .formacao {
+        min-width: 100px;
+        height: 250px;
+    }
+
+    .texto-portifolio {
+        margin-top: 50px;
+    }
+
+    .titulo-apresentacao {
+        font-size: 60px;
+    }
+
+    .contatar {
+        margin-bottom: 20px;
+    }
+
+    .caixa-contatos {
+        width: 250px;
+    }
+
+    #topBtn {
+        right: 15px;
+    }
+
+}
