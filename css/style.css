@@ -127,9 +127,6 @@ header {
 
 .light-mode {
     font-size: 22px;
-    position: relative;
-    top: 30%;
-    left: 28%;
 }
 
 
@@ -139,18 +136,14 @@ li {
     list-style: none;
 }
 
-.container-navegacao li+li {
-    margin-left: 40px;
-
-}
-
 
 .logo {
     text-decoration: none;
     list-style: none;
     color: var(--cor1);
     font-size: 22px;
-    margin-left: 20px;
+    margin-left: 40px;
+    margin-right: 50px;
     padding: 20px;
     white-space: nowrap;
 }
@@ -185,15 +178,13 @@ li .icones-menu {
 }
 
 .menu-navegacao {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-
+    width: 500px;
 }
 
 .container-navegacao {
     display: flex;
+    justify-content: space-between;
+    
 }
 
 .navegacao {
@@ -317,81 +308,42 @@ li .icones-menu {
     }
   }
 
-#laranja {
+.coresTam {
     width: 35px;
     height: 35px;
-    background-color: #fb6b02;
     border-radius: 5px;
 }
 
-#laranja:hover {
+.coresTam:hover {
     cursor: pointer;
+}
+
+#laranja {
+    background-color: #fb6b02;
 }
 
 #amarelo {
-    width: 35px;
-    height: 35px;
     background-color: #fbd602;
-    border-radius: 5px;
-}
-
-#amarelo:hover {
-    cursor: pointer;
 }
 
 #azul {
-    width: 35px;
-    height: 35px;
     background-color: #033afa;
-    border-radius: 5px;
-}
-
-#azul:hover {
-    cursor: pointer;
 }
 
 #rosa {
-    width: 35px;
-    height: 35px;
     background-color: #fd00fd;
-    border-radius: 5px;
-}
-
-#rosa:hover {
-    cursor: pointer;
 }
 
 #roxo {
-    width: 35px;
-    height: 35px;
     background-color: #bc03fa;
-    border-radius: 5px;
-}
-
-#roxo:hover {
-    cursor: pointer;
 }
 
 #vermelho {
-    width: 35px;
-    height: 35px;
     background-color: #fd0026;
-    border-radius: 5px;
-}
-
-#vermelho:hover {
-    cursor: pointer;
 }
 
 #verde {
-    width: 35px;
-    height: 35px;
     background-color: #5bb700;
-    border-radius: 5px;
-}
-
-#verde:hover {
-    cursor: pointer;
 }
 
 #apagar {
@@ -1210,10 +1162,21 @@ footer {
 
 }
 
+@media (max-width: 1255px){
+    .container-formacoes {
+        gap: 30px 31px;
+    }
+
+    .formacao {
+        min-width: 250px;
+        width: 200px;
+    }
+}
+
 @media (max-width: 1000px) {
     .apresentacao {
         min-height: 1100px;
-        padding-top: 350px;
+        padding-top: 250px;
         padding-bottom: 0;
     }
 
@@ -1224,7 +1187,7 @@ footer {
     .container-foto {
         grid-column: 1/5;
         grid-row: 1/2;
-        width: 605px;
+        width: 550px;
     }
     
     .texto-sobre {
@@ -1238,11 +1201,12 @@ footer {
     }
     
     .frase {
-        font-size: 12px;
+        font-size: 11px;
         justify-content: flex-start;
     }
     
     .frase span {
+        margin-right: 3px;
         font-size: 40px;
     }
     
@@ -1306,12 +1270,12 @@ footer {
     .container-formacoes {
         height: 850px;
         overflow-y: auto;
-        gap: 20px;
+        gap: 20px 80px;
     }
 
     .formacao {
-        width: 203px;
-        height: 150px;
+        min-width: 253px;
+        height: 250px;
     }
 
     .portifolio {
@@ -1386,11 +1350,13 @@ footer {
     }
 
 
-    .menu-navegacao {
+    .container-navegacao {
         position: fixed;
-        width: 80%;
-        top: 920px;
-        left: 100px;
+        align-items: center;
+        justify-content: space-between;
+        width: 68%;
+        top: 720px;
+        left: 160px;
         height: 65px;
         background-color: var(--cor-btn);
         border-radius: 18px;
@@ -1434,18 +1400,37 @@ footer {
         min-height: 280px;
     }    
 
-    .menu-navegacao {
-        width: 70%;
-        top: 950px;
-        left: 125px;
+    .container-foto {
+        margin-left: 20px;
+    }
+
+    .container-navegacao {
+        left: 130px;
+    }
+
+    .icones-menu{
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+
+    .container-formacoes {
+        gap: 20px 100px;
     }
 
 }
 
-@media (max-width: 770px) {
+@media (max-width: 775px) {
+    .container-navegacao {
+        left: 120px;
+    }
+
+    li .icones-menu {
+        font-size: 25px;
+    }
+
     .apresentacao {
-        min-height: 1025px;
-        padding-top: 300px;
+        min-height: 900px;
+        padding-top: 250px;
     }
 
     .subtitulo-sobre {
@@ -1455,7 +1440,8 @@ footer {
     .container-foto {
         grid-column: 1/5;
         grid-row: 1/2;
-        width: 570px;
+        width: 550px;
+        margin-left: 10px;
     }
     
     .frase {
@@ -1477,6 +1463,7 @@ footer {
 
     .container-formacoes {
         margin-left: 35px;
+        gap: 20px 35px;
     }
 
     .formacao {
@@ -1484,14 +1471,6 @@ footer {
         height: 150px;
     }
 
-    .menu-navegacao {
-        position: fixed;
-        width: 70%;
-        top: 855px;
-        left: 120px;
-        height: 65px;
-        border-radius: 18px;
-    }
 
     li .texto-menu {
         display: none;
@@ -1507,6 +1486,463 @@ footer {
 
     .titulo-apresentacao {
         font-size: 60px;
+    }
+
+    #topBtn {
+        right: 15px;
+    }
+
+}
+
+@media (max-width: 720px) {
+    .container-navegacao {
+        width: 60%;
+        left: 140px;
+    }
+
+    .container-navegacao .icones-menu {
+        font-size: 30px;
+    }
+
+    .container-foto {
+        width: 520px;
+    }
+    
+    .texto-sobre h1 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .frase {
+        font-size: 10px;
+    }
+    
+    .frase span {
+        margin-right: 5px;
+        font-size: 36px;
+    }
+
+    .container-formacoes {
+        padding: 0;
+        min-height: 1000px;
+        margin-top: 5px;
+        min-height: 10px;
+        overflow-x: auto;
+        gap: 10px 30px;
+    }
+
+    .formacao {
+        min-width: 520px;
+        height: 200px;
+        padding: 2px;
+    }
+
+    .caixa-contatos {
+        width: 500px;
+    }
+
+}
+
+@media (max-width: 650px) {
+    .redes-sociais {
+        margin-top: 600px;
+        margin-left: 5px;
+    }
+
+    .container-navegacao {
+        width: 55%;
+        height: 50px;
+    }
+
+    .container-navegacao .icones-menu {
+        font-size: 21px;
+        margin: 0;
+    }
+
+    .container-foto {
+        width: 300px;
+        margin-left: 90px;
+    }
+
+    .frase {
+        font-size: 9px;
+    }
+
+    .habilidades-teste {
+        margin-top: 6px;
+    }
+
+    .container-formacoes {
+        min-height: 1000px;
+        margin-top: 25px;
+        min-height: 10px;
+        overflow-x: auto;
+        gap: 10px 30px;
+    }
+
+    .formacao {
+        min-width: 460px;
+        height: 200px;
+        padding: 2px;
+    }
+
+    .caixa-contatos {
+        width: 400px;
+    }
+
+
+    #topBtn {
+        right: 10px;
+        font-size: 5px;
+        padding: 10px;
+    }
+    
+}
+
+@media (max-width: 580px){
+    .container-navegacao {
+        left: 125px;
+    }
+    
+
+    .container-foto {
+        width: 300px;
+        margin-left: 60px;
+    }
+
+    .foto-perfil {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .texto-sobre h1 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .frase {
+        font-size: 8px;
+    }
+    
+    .frase span {
+        margin-right: 5px;
+        font-size: 36px;
+    }
+
+    .btn2 {
+        width: 160px;
+        height: 40px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 15px;
+        border-radius: 10px;
+    }
+
+    .formacao {
+        min-width: 400px;
+    }
+
+    .deploy-codigo {
+        margin-bottom: 10px;
+    }
+
+
+    #topBtn {
+        right: 12px;
+        padding: 5px;
+    }
+
+    .caixa-contatos {
+        width: 400px;
+    }
+
+    .contatar {
+        width: 80%;
+    }
+
+}
+
+@media (max-width: 520px) {
+    .titulos {
+        font-size: 25px;
+    }
+
+    .subtitulo-sobre {
+        font-size: 20px;
+    }
+
+    .btn-darkLight {
+        margin-right: 20px;
+        width: 70px;
+        height: 40px;
+        border-radius: 10px;
+    }
+
+    .btn-darkLight .light-mode {
+        font-size: 20px;
+    }
+
+    .aba-cores {
+        left: 15px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .cores {
+        left: 15px;
+        top: 150px;
+        width: 30px;
+        height: 230px;
+    }
+
+    .coresTam {
+        width: 25px;
+        height: 25px;
+    }
+
+    #apagar {
+        font-size: 20px;
+    }
+
+    .apresentacao {
+        padding-top: 320px;
+    }
+
+    .texto-portifolio {
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+
+    .titulo-apresentacao {
+        margin-bottom: 10px;
+    }
+
+    .titulo-apresentacao .nome {
+        font-size: 35px;
+    }
+    .titulo-apresentacao .sobrenome {
+        font-size: 35px;
+    }
+
+    .funcao {
+        font-size: 20px;
+    }
+
+    .btn {
+        width: 170px;
+        height: 50px;
+        border-radius: 10px;
+        font-size: 17px;
+    }
+
+    .container-navegacao {
+        width: 70%;
+        left: 75px;
+        justify-content: center;
+    }
+
+    .container-foto {
+        margin-left: 40px;
+    }
+
+    .frase {
+        font-size: 7.2px;
+    }
+
+
+    .formacao {
+        min-width: 360px;
+    }
+
+
+    .container-portifolio {
+        width: 100%;
+        left: -10%;
+    }
+      
+    
+    .imagens {
+        min-height: 10px;
+        border-radius: 3px;
+        margin-top: 50px;
+    }
+    
+    .descricao-projeto {
+        margin-top: 40px;
+    }
+
+    .caixa-contatos {
+        width: 330px;
+    }
+
+    footer {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 415px) {
+    .titulos {
+        font-size: 25px;
+    }
+
+    .subtitulo-sobre {
+        font-size: 20px;
+    }
+
+    .container-navegacao {
+        top: 720px;
+        left: 60px;
+        height: 50px;
+    }
+
+    .logo {
+        margin-left: 2px;
+    }
+
+    .btn-darkLight {
+        width: 35px;
+        height: 35px;
+        border-radius: 5px;
+    }
+
+    .btn-darkLight .light-mode {
+        font-size: 20px;
+    }
+
+    .redes-sociais {
+        margin-top: 550px;
+        margin-left: 0px;
+    }
+
+    .container-cores {
+        top: 160px;
+        left: 8px;
+    }
+
+    .aba-cores  {
+        border-radius: 6px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .cores {
+        left: 8px;
+        top: 200px;
+    }
+
+    .container-navegacao .icones-menu {
+        font-size: 20px;
+    }
+
+    .apresentacao {
+        min-height: 895px;
+        padding-top: 290px;
+    }
+
+    .texto-portifolio {
+        font-size: 25px;
+        margin-bottom: 50px;
+    }
+
+    .titulo-apresentacao {
+        margin-bottom: 10px;
+    }
+
+    .titulo-apresentacao .nome {
+        font-size: 45px;
+    }
+    .titulo-apresentacao .sobrenome {
+        font-size: 45px;
+    }
+
+    .funcao {
+        font-size: 22px;
+    }
+
+    .btn {
+        width: 200px;
+        height: 60px;
+        margin-top: 40px;
+        font-size: 18px;
+    }
+
+    .container-sobre {
+        max-width: 550px;
+        padding: 5px 5px 0 5px;
+    }
+
+    .subtitulo-sobre {
+        padding-top: 20px;
+    }
+
+    .container-foto {
+        width: 200px;
+        margin-left: 60px;
+    }
+
+    .foto-perfil {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 25px;
+    }
+
+    .perfil p{
+        font-size: 14px;
+    }
+
+    .perfil-git {
+        font-size: 12px;
+    }
+
+    .texto-sobre h1 {
+        margin-top: 8px;
+        font-size: 20px;
+    }
+
+    .texto-sobre p {
+        font-size: 14px;
+    }
+    
+    .frase {
+        font-size: 6px;
+        margin: 0;
+    }
+    
+    .frase span {
+        font-size: 30px;
+        margin: 0;
+    }
+    
+    
+    .sobre {
+        text-align: center;
+        height: 100vh;
+        min-height: 1000px;
+    }
+
+    .container-formacoes {
+        margin-left: 35px;
+    }
+
+    .formacao {
+        min-width: 100px;
+        height: 250px;
+    }
+
+    .texto-portifolio {
+        margin-top: 50px;
+    }
+
+    .titulo-apresentacao {
+        font-size: 60px;
+    }
+
+    .contatar {
+        margin-bottom: 20px;
+    }
+
+    .caixa-contatos {
+        width: 250px;
     }
 
     #topBtn {
