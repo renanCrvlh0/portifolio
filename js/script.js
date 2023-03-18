@@ -99,3 +99,41 @@ document.getElementById('topBtn').onclick = function () {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 };
+
+const carousel = document.querySelector('.carrossel');
+const slides = carousel.querySelectorAll('.slide');
+const prevBtn = document.querySelector('.prev');
+const nextBtn = document.querySelector('.next');
+let slidePosition = 0;
+
+function moveToSlide(position) {
+  carousel.style.transform = `translateX(-${position}%)`;
+}
+
+function updateSlidePosition(position) {
+  slidePosition = position;
+  if (slidePosition === 0) {
+    prevBtn.disabled = true;
+  } else {
+    prevBtn.disabled = false;
+  }
+  if (slidePosition === slides.length - 1) {
+    nextBtn.disabled = true;
+  } else {
+    nextBtn.disabled = false;
+  }
+}
+
+prevBtn.addEventListener('click', () => {
+  slidePosition -= 100 / slides.length;
+  moveToSlide(slidePosition);
+  updateSlidePosition(slidePosition);
+});
+
+nextBtn.addEventListener('click', () => {
+  slidePosition += 100 / slides.length;
+  moveToSlide(slidePosition);
+  updateSlidePosition(slidePosition);
+});
+
+updateSlidePosition(slidePosition);
