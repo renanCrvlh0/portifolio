@@ -81,59 +81,48 @@ fechar.forEach((item) => {
   item.addEventListener('click', desativar);
 });
 
-// Quando o usuário rolar a página, mostrar ou ocultar o botão
-window.onscroll = function () {
-  scrollFunction();
-};
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById('topBtn').style.display = 'block';
-  } else {
-    document.getElementById('topBtn').style.display = 'none';
-  }
+
+const slider = document.querySelectorAll('.slider');
+
+const btnNext = document.querySelector('.next');
+const btnPrev = document.querySelector('.prev');
+
+let idx = 0;
+
+function esconderSlider() {
+  slider.forEach(item => item.classList.remove('on'));
 }
 
-// Quando o usuário clicar no botão, rolar para o topo da página
-document.getElementById('topBtn').onclick = function () {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-};
-
-const carousel = document.querySelector('.carrossel');
-const slides = carousel.querySelectorAll('.slide');
-const prevBtn = document.querySelector('.prev');
-const nextBtn = document.querySelector('.next');
-let slidePosition = 0;
-
-function moveToSlide(position) {
-  carousel.style.transform = `translateX(-${position}%)`;
+function mostrarSlider() {
+  slider[idx].classList.add('on');
 }
 
-function updateSlidePosition(position) {
-  slidePosition = position;
-  if (slidePosition === 0) {
-    prevBtn.disabled = true;
+function nextSlider() {
+  esconderSlider();
+
+  if(idx == slider.length -1) {
+    idx = 0;
   } else {
-    prevBtn.disabled = false;
+    idx++;
   }
-  if (slidePosition === slides.length - 1) {
-    nextBtn.disabled = true;
-  } else {
-    nextBtn.disabled = false;
-  }
+
+  mostrarSlider();
 }
 
-prevBtn.addEventListener('click', () => {
-  slidePosition -= 100 / slides.length;
-  moveToSlide(slidePosition);
-  updateSlidePosition(slidePosition);
-});
+function prevSlider() {
+  esconderSlider();
 
-nextBtn.addEventListener('click', () => {
-  slidePosition += 100 / slides.length;
-  moveToSlide(slidePosition);
-  updateSlidePosition(slidePosition);
-});
+  if(idx == 0) {
+    idx = slider.length -1;
+  } else {
+    idx--;
+  }
 
-updateSlidePosition(slidePosition);
+  mostrarSlider();
+}
+
+btnNext.addEventListener('click', nextSlider);
+btnPrev.addEventListener('click', prevSlider);
+
+console.log(slider);

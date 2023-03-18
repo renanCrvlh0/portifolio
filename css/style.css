@@ -60,11 +60,6 @@ html {
     scroll-behavior: smooth;
 }
 
-img {
-    display: block;
-    max-width: 100%;
-}
-
 
 
 body {
@@ -714,51 +709,40 @@ button .icone-habilidade {
 }
 
 .container-portifolio {
-    max-width: 600px;
-    margin: 0 auto;
-    position: relative;
-  }
-  
-  .carrossel {
     display: flex;
-    overflow-x: hidden;
-  }
-  
-  .slide {
-    width: 100%;
-    margin-right: 20px;
-  }
-  
-  .slide:last-of-type {
-    margin-right: 0;
-  }
-  
-  img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .controls {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.container-carrossel {
+    border-radius: 10px;
+    overflow: hidden;
+    height: 500px;
+    width: 900px;
+    margin-top: 200px;
+}
+
+
+.carrossel {
     display: flex;
-  }
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+.slider {
+    object-fit: cover;
+    width: 900px;
+    height: 500px;
+    opacity: 0;
+    transition: opacity .2s;
+}
+
+.on {
+    opacity: 1;
+}
   
-  button {
-    background-color: transparent;
-    border: none;
-    color: white;
-    font-size: 18px;
-    padding: 10px 20px;
-    cursor: pointer;
-    margin-right: 10px;
-  }
   
-  button:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-  }
 
 
 /* .card {

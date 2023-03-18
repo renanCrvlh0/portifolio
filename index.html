@@ -21,7 +21,7 @@
 
 </head>
 
-<script type="module" src="js/script.js"></script>
+<script type="module" src="js/script.js" defer></script>
 
 <title>Renan de Carvalho</title>
 </head>
@@ -448,16 +448,24 @@
 
             <div class="container-portifolio">
 
-                <div class="carrossel">
-                    <div class="slide"><img src="imagens/fundo azul.jpg" alt=""></div>
-                    <div class="slide"><img src="imagens/fundo amarelo.jpg" alt=""></div>
-                    <div class="slide"><img src="imagens/fundo verde.jpg" alt=""></div>
-
-                    <div class="controls">
-                        <button class="prev">Anterior</button>
-                        <button class="next">Próximo</button>
+                <button class="prev"><span class="material-symbols-outlined">
+                    chevron_left
+                    </span></button>
+                <div class="container-carrossel">
+                    
+                    <div class="carrossel" id="img-carrossel">
+                        <img src="imagens/fundo azul.jpg" alt="" class="slider">
+                        <img src="imagens/fundo amarelo.jpg" alt="" class="slider">
+                        <img src="imagens/fundo verde.jpg" alt="" class="slider">
                     </div>
+                    
                 </div>
+                <button class="next"><span class="material-symbols-outlined">
+                    navigate_next
+                    </span></button>
+            </div>
+
+        </section>
 
 
                 <!-- <div class="card">
@@ -535,9 +543,7 @@
                 </div> -->
 
 
-            </div>
-
-        </section>
+            
 
         <section id="contatos" class="contatos  config-seccao">
             <h2 class="titulos">C O N T A T O</h2>
@@ -576,27 +582,5 @@
     </div>
 
 </body>
-
-<script>
-
-    $('.container-portifolio').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        dots: true,
-        accessibility: false,
-    });
-
-    // $('.container-formacoes').slick({
-    //     slidesToShow: 2,
-    //     slidesToScroll: 1,
-    //     autoplay: true,
-    //     autoplaySpeed: 2000,
-    //     dots: true,
-    //     accessibility: false,
-    // });
-
-</script>
 
 </html>
